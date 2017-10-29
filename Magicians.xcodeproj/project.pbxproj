@@ -16,13 +16,14 @@
 		334B5F4B1EDAEAAB00375186 /* ScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334B5F4A1EDAEAAB00375186 /* ScrollView.swift */; };
 		334B5F531EDAF54500375186 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334B5F521EDAF54500375186 /* ViewController.swift */; };
 		3376FA811FA5C7F200701EB7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334B5F521EDAF54500375186 /* ViewController.swift */; };
+		3376FA8D1FA5EF9500701EB7 /* Magicians.h in Headers */ = {isa = PBXBuildFile; fileRef = 334B5F1F1EDAAECA00375186 /* Magicians.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3334886E1FA59EDD0014D851 /* Magicians.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Magicians.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		333488821FA5B62E0014D851 /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
 		334B5F131EDAAE4300375186 /* Magicians.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Magicians.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		334B5F1F1EDAAECA00375186 /* Magicians.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Magicians.h; path = ../Source/Magicians.h; sourceTree = "<group>"; };
+		334B5F1F1EDAAECA00375186 /* Magicians.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Magicians.h; sourceTree = "<group>"; };
 		334B5F231EDAAECA00375186 /* View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
 		334B5F2B1EDAAEED00375186 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		334B5F4A1EDAEAAB00375186 /* ScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrollView.swift; sourceTree = "<group>"; };
@@ -92,6 +93,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3376FA8D1FA5EF9500701EB7 /* Magicians.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
