@@ -1,17 +1,22 @@
 //
-//  UIViewController.swift
-//  IBZealot
+//  ViewController.swift
 //
 //  Created by XuXudong on 5/28/17.
 //  Copyright © 2017 alchemistxxd. All rights reserved.
 //
 
-import UIKit.UIViewController
+#if os(iOS) || os(tvOS)
+    import UIKit
+#elseif os(macOS)
+    import AppKit
+#endif
 
-@IBDesignable
-private extension UIViewController {
+#if os(iOS) || os(tvOS)
     
-    @IBInspectable private var _extendedLayoutIncludesOpaqueBars: Bool {
+@IBDesignable
+extension UIViewController {
+        
+    @IBInspectable var _extendedLayoutIncludesOpaqueBars: Bool {
         set {
             extendedLayoutIncludesOpaqueBars = newValue
         } get {
@@ -19,4 +24,6 @@ private extension UIViewController {
         }
     }
 }
+
+#endif
 

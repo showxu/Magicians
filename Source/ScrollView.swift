@@ -1,16 +1,17 @@
 //
-//  UIScrollView.swift
-//  IBZealot
+//  ScrollView.swift
 //
 //  Created by XuXudong on 5/28/17.
 //  Copyright © 2017 alchemistxxd. All rights reserved.
 //
 
-import UIKit.UIScrollView
+#if os(iOS) || os(tvOS)
+    import UIKit
+#elseif os(macOS)
+    import AppKit
+#endif
 
-private extension UIButton {
-
-}
+#if os(iOS) || os(tvOS)
 
 @IBDesignable
 private extension UIScrollView {
@@ -47,3 +48,5 @@ private extension UIScrollView {
         }
     }
 }
+
+#endif
