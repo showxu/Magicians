@@ -1,7 +1,7 @@
 # Magicians
 [![CocoaPods Compatible](https://img.shields.io/cocoapods/v/Magicians.svg)](https://img.shields.io/cocoapods/v/Magicians.svg)
 [![Platform](https://img.shields.io/cocoapods/p/Magicians.svg?style=flat)](https://alamofire.github.io/Magicians)
-[![Gitter](https://badges.gitter.im/Alchemistxxd/Magicians.svg)](https://gitter.im/Alchemistxxd/Magicians?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
+[![Gitter](https://badges.gitter.im/0xxd0/Magicians.svg)](https://gitter.im/0xxd0/Magicians?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 
 
 Magicians is an utility extension for interface builder by configure object visually. 
@@ -59,8 +59,8 @@ $ pod install
 
 Just open the `interface builder` and switch to `attributes inspector`, then configure the object visually.
 
-![Magicians](https://raw.githubusercontent.com/Alchemistxxd/Magicians/master/screenshots/UIView.png)
-![Magicians](https://raw.githubusercontent.com/Alchemistxxd/Magicians/master/screenshots/UIScrollView.png)
+![Magicians](https://raw.githubusercontent.com/0xxd0/Magicians/master/screenshots/UIView.png)
+![Magicians](https://raw.githubusercontent.com/0xxd0/Magicians/master/screenshots/UIScrollView.png)
 
 
 ## Communication
