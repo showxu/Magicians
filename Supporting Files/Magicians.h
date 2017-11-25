@@ -7,6 +7,10 @@
 
 @import Foundation;
 
+#import "Magicians.pch"
+#import "^Block.h"
+#import "Sequence.pch"
+
 //! Project version number for Magicians.
 FOUNDATION_EXPORT double MagiciansVersionNumber;
 

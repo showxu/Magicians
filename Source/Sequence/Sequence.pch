@@ -1,0 +1,10 @@
+//
+//  Sequence.pch
+//  Magicians
+//
+//  Created by Alchemist on 2017/11/25.
+//  Copyright © 2017年 alchemistxxd. All rights reserved.
+//
+
+#import "Sequence.h"
+#import "NSArray+Sequence.h"

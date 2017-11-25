@@ -7,30 +7,84 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		330966C11FC9563300EBDB56 /* Sequence.pch in Headers */ = {isa = PBXBuildFile; fileRef = 330966C01FC9563300EBDB56 /* Sequence.pch */; settings = {ATTRIBUTES = (Public, ); }; };
+		330966C21FC9563300EBDB56 /* Sequence.pch in Headers */ = {isa = PBXBuildFile; fileRef = 330966C01FC9563300EBDB56 /* Sequence.pch */; settings = {ATTRIBUTES = (Public, ); }; };
+		331C74641FC81ECC00A5C116 /* Magicians.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 334B5F131EDAAE4300375186 /* Magicians.framework */; };
 		333488761FA59F780014D851 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334B5F231EDAAECA00375186 /* View.swift */; };
 		333488781FA5A0050014D851 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334B5F231EDAAECA00375186 /* View.swift */; };
 		333488811FA5B4210014D851 /* ScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334B5F4A1EDAEAAB00375186 /* ScrollView.swift */; };
 		333488831FA5B62E0014D851 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333488821FA5B62E0014D851 /* Utility.swift */; };
 		333488841FA5B62E0014D851 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333488821FA5B62E0014D851 /* Utility.swift */; };
+		333A5CAB1FC3D4B9001597A6 /* NSArray+Sequence.h in Headers */ = {isa = PBXBuildFile; fileRef = 333A5CA91FC3D4B9001597A6 /* NSArray+Sequence.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		333A5CAC1FC3D4B9001597A6 /* NSArray+Sequence.h in Headers */ = {isa = PBXBuildFile; fileRef = 333A5CA91FC3D4B9001597A6 /* NSArray+Sequence.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		333A5CAD1FC3D4B9001597A6 /* NSArray+Sequence.mm in Sources */ = {isa = PBXBuildFile; fileRef = 333A5CAA1FC3D4B9001597A6 /* NSArray+Sequence.mm */; };
+		333A5CAE1FC3D4B9001597A6 /* NSArray+Sequence.mm in Sources */ = {isa = PBXBuildFile; fileRef = 333A5CAA1FC3D4B9001597A6 /* NSArray+Sequence.mm */; };
+		333A5CB41FC436A4001597A6 /* Sequence.h in Headers */ = {isa = PBXBuildFile; fileRef = 333A5CB31FC436A4001597A6 /* Sequence.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		333A5CB51FC436A4001597A6 /* Sequence.h in Headers */ = {isa = PBXBuildFile; fileRef = 333A5CB31FC436A4001597A6 /* Sequence.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		334B5F241EDAAECA00375186 /* Magicians.h in Headers */ = {isa = PBXBuildFile; fileRef = 334B5F1F1EDAAECA00375186 /* Magicians.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		334B5F4B1EDAEAAB00375186 /* ScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334B5F4A1EDAEAAB00375186 /* ScrollView.swift */; };
 		334B5F531EDAF54500375186 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334B5F521EDAF54500375186 /* ViewController.swift */; };
 		3376FA811FA5C7F200701EB7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334B5F521EDAF54500375186 /* ViewController.swift */; };
 		3376FA8D1FA5EF9500701EB7 /* Magicians.h in Headers */ = {isa = PBXBuildFile; fileRef = 334B5F1F1EDAAECA00375186 /* Magicians.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		337C9CEF1FC69A7100099BF9 /* ^Block.h in Headers */ = {isa = PBXBuildFile; fileRef = 337C9CEE1FC69A7100099BF9 /* ^Block.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		337C9CF01FC69A7100099BF9 /* ^Block.h in Headers */ = {isa = PBXBuildFile; fileRef = 337C9CEE1FC69A7100099BF9 /* ^Block.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		337C9CF31FC6B29900099BF9 /* ^Block.mm in Sources */ = {isa = PBXBuildFile; fileRef = 337C9CF21FC6B29900099BF9 /* ^Block.mm */; };
+		337C9CF41FC6B29900099BF9 /* ^Block.mm in Sources */ = {isa = PBXBuildFile; fileRef = 337C9CF21FC6B29900099BF9 /* ^Block.mm */; };
+		337C9CFD1FC6D7C600099BF9 /* RawRepresentable.h in Headers */ = {isa = PBXBuildFile; fileRef = 337C9CFC1FC6D7C600099BF9 /* RawRepresentable.h */; };
+		337C9CFE1FC6D7C600099BF9 /* RawRepresentable.h in Headers */ = {isa = PBXBuildFile; fileRef = 337C9CFC1FC6D7C600099BF9 /* RawRepresentable.h */; };
+		33990BC81FC9D69B0091EA8E /* ^BlockTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 33990BC31FC9D68F0091EA8E /* ^BlockTest.m */; };
+		33B120831FB7372300203A40 /* Magicians.pch in Headers */ = {isa = PBXBuildFile; fileRef = 33B120811FB7372300203A40 /* Magicians.pch */; settings = {ATTRIBUTES = (Public, ); }; };
+		33B120851FB73A3F00203A40 /* Magicians.pch in Headers */ = {isa = PBXBuildFile; fileRef = 33B120811FB7372300203A40 /* Magicians.pch */; settings = {ATTRIBUTES = (Public, ); }; };
+		33B120901FB7451F00203A40 /* C++.mm in Sources */ = {isa = PBXBuildFile; fileRef = 33B1208F1FB7451F00203A40 /* C++.mm */; };
+		33B120911FB7451F00203A40 /* C++.mm in Sources */ = {isa = PBXBuildFile; fileRef = 33B1208F1FB7451F00203A40 /* C++.mm */; };
+		33D1D2B61FBAE9AF005E82E4 /* Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D1D2B51FBAE9AF005E82E4 /* Layout.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		331C74651FC81ECC00A5C116 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 334B5F0A1EDAAE4300375186 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 334B5F121EDAAE4300375186;
+			remoteInfo = "Magicians iOS";
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		330966C01FC9563300EBDB56 /* Sequence.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Sequence.pch; sourceTree = "<group>"; };
+		331C745F1FC81ECC00A5C116 /* MagiciansTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MagiciansTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3334886E1FA59EDD0014D851 /* Magicians.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Magicians.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		333488821FA5B62E0014D851 /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
+		333A5CA91FC3D4B9001597A6 /* NSArray+Sequence.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSArray+Sequence.h"; sourceTree = "<group>"; };
+		333A5CAA1FC3D4B9001597A6 /* NSArray+Sequence.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = "NSArray+Sequence.mm"; sourceTree = "<group>"; };
+		333A5CB31FC436A4001597A6 /* Sequence.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Sequence.h; sourceTree = "<group>"; };
 		334B5F131EDAAE4300375186 /* Magicians.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Magicians.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		334B5F1F1EDAAECA00375186 /* Magicians.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Magicians.h; sourceTree = "<group>"; };
 		334B5F231EDAAECA00375186 /* View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
 		334B5F2B1EDAAEED00375186 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		334B5F4A1EDAEAAB00375186 /* ScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrollView.swift; sourceTree = "<group>"; };
 		334B5F521EDAF54500375186 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		337C9CEE1FC69A7100099BF9 /* ^Block.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "^Block.h"; sourceTree = "<group>"; };
+		337C9CF21FC6B29900099BF9 /* ^Block.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = "^Block.mm"; sourceTree = "<group>"; };
+		337C9CFC1FC6D7C600099BF9 /* RawRepresentable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RawRepresentable.h; sourceTree = "<group>"; };
+		33990BC11FC9D68F0091EA8E /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		33990BC31FC9D68F0091EA8E /* ^BlockTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "^BlockTest.m"; sourceTree = "<group>"; };
+		33B1207E1FB734C500203A40 /* Magicians.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; fileEncoding = 4; path = Magicians.podspec; sourceTree = SOURCE_ROOT; };
+		33B120801FB7354A00203A40 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
+		33B120811FB7372300203A40 /* Magicians.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Magicians.pch; sourceTree = "<group>"; };
+		33B1208F1FB7451F00203A40 /* C++.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = "C++.mm"; sourceTree = "<group>"; };
+		33D1D2B51FBAE9AF005E82E4 /* Layout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Layout.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		331C745C1FC81ECC00A5C116 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				331C74641FC81ECC00A5C116 /* Magicians.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3334886A1FA59EDD0014D851 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -48,11 +102,70 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		330966C41FC971D700EBDB56 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				33990BC21FC9D68F0091EA8E /* ^BlockTest */,
+				33990BC01FC9D68F0091EA8E /* Supporting Files */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		330966C91FC9720E00EBDB56 /* ^Block */ = {
+			isa = PBXGroup;
+			children = (
+				337C9CEE1FC69A7100099BF9 /* ^Block.h */,
+				337C9CF21FC6B29900099BF9 /* ^Block.mm */,
+			);
+			path = "^Block";
+			sourceTree = "<group>";
+		};
+		330966CB1FC9723600EBDB56 /* Sequence */ = {
+			isa = PBXGroup;
+			children = (
+				330966C01FC9563300EBDB56 /* Sequence.pch */,
+				333A5CB31FC436A4001597A6 /* Sequence.h */,
+				333A5CA91FC3D4B9001597A6 /* NSArray+Sequence.h */,
+				333A5CAA1FC3D4B9001597A6 /* NSArray+Sequence.mm */,
+			);
+			path = Sequence;
+			sourceTree = "<group>";
+		};
+		330966CC1FC9725200EBDB56 /* RawRepresentable */ = {
+			isa = PBXGroup;
+			children = (
+				337C9CFC1FC6D7C600099BF9 /* RawRepresentable.h */,
+			);
+			path = RawRepresentable;
+			sourceTree = "<group>";
+		};
+		330966CD1FC972D200EBDB56 /* Swift */ = {
+			isa = PBXGroup;
+			children = (
+				333488821FA5B62E0014D851 /* Utility.swift */,
+				334B5F231EDAAECA00375186 /* View.swift */,
+				334B5F4A1EDAEAAB00375186 /* ScrollView.swift */,
+				334B5F521EDAF54500375186 /* ViewController.swift */,
+				33D1D2B51FBAE9AF005E82E4 /* Layout.swift */,
+			);
+			path = Swift;
+			sourceTree = "<group>";
+		};
+		330966CE1FC972DF00EBDB56 /* C++ */ = {
+			isa = PBXGroup;
+			children = (
+				33B1208F1FB7451F00203A40 /* C++.mm */,
+			);
+			path = "C++";
+			sourceTree = "<group>";
+		};
 		334B5F091EDAAE4300375186 = {
 			isa = PBXGroup;
 			children = (
 				334B5F1E1EDAAECA00375186 /* Source */,
+				330966C41FC971D700EBDB56 /* Tests */,
 				334B5F2A1EDAAEED00375186 /* Supporting Files */,
+				33B1207D1FB734B500203A40 /* Deployment */,
 				334B5F141EDAAE4300375186 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -62,6 +175,7 @@
 			children = (
 				334B5F131EDAAE4300375186 /* Magicians.framework */,
 				3334886E1FA59EDD0014D851 /* Magicians.framework */,
+				331C745F1FC81ECC00A5C116 /* MagiciansTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -69,10 +183,12 @@
 		334B5F1E1EDAAECA00375186 /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				333488821FA5B62E0014D851 /* Utility.swift */,
-				334B5F231EDAAECA00375186 /* View.swift */,
-				334B5F4A1EDAEAAB00375186 /* ScrollView.swift */,
-				334B5F521EDAF54500375186 /* ViewController.swift */,
+				33B120811FB7372300203A40 /* Magicians.pch */,
+				330966C91FC9720E00EBDB56 /* ^Block */,
+				330966CB1FC9723600EBDB56 /* Sequence */,
+				330966CC1FC9725200EBDB56 /* RawRepresentable */,
+				330966CE1FC972DF00EBDB56 /* C++ */,
+				330966CD1FC972D200EBDB56 /* Swift */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -86,6 +202,31 @@
 			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		33990BC01FC9D68F0091EA8E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				33990BC11FC9D68F0091EA8E /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		33990BC21FC9D68F0091EA8E /* ^BlockTest */ = {
+			isa = PBXGroup;
+			children = (
+				33990BC31FC9D68F0091EA8E /* ^BlockTest.m */,
+			);
+			path = "^BlockTest";
+			sourceTree = "<group>";
+		};
+		33B1207D1FB734B500203A40 /* Deployment */ = {
+			isa = PBXGroup;
+			children = (
+				33B1207E1FB734C500203A40 /* Magicians.podspec */,
+				33B120801FB7354A00203A40 /* README.md */,
+			);
+			path = Deployment;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -94,6 +235,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				3376FA8D1FA5EF9500701EB7 /* Magicians.h in Headers */,
+				333A5CB51FC436A4001597A6 /* Sequence.h in Headers */,
+				333A5CAC1FC3D4B9001597A6 /* NSArray+Sequence.h in Headers */,
+				337C9CF01FC69A7100099BF9 /* ^Block.h in Headers */,
+				337C9CFE1FC6D7C600099BF9 /* RawRepresentable.h in Headers */,
+				33B120851FB73A3F00203A40 /* Magicians.pch in Headers */,
+				330966C21FC9563300EBDB56 /* Sequence.pch in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -102,12 +249,36 @@
 			buildActionMask = 2147483647;
 			files = (
 				334B5F241EDAAECA00375186 /* Magicians.h in Headers */,
+				33B120831FB7372300203A40 /* Magicians.pch in Headers */,
+				333A5CB41FC436A4001597A6 /* Sequence.h in Headers */,
+				337C9CFD1FC6D7C600099BF9 /* RawRepresentable.h in Headers */,
+				333A5CAB1FC3D4B9001597A6 /* NSArray+Sequence.h in Headers */,
+				337C9CEF1FC69A7100099BF9 /* ^Block.h in Headers */,
+				330966C11FC9563300EBDB56 /* Sequence.pch in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		331C745E1FC81ECC00A5C116 /* MagiciansTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 331C74671FC81ECC00A5C116 /* Build configuration list for PBXNativeTarget "MagiciansTests" */;
+			buildPhases = (
+				331C745B1FC81ECC00A5C116 /* Sources */,
+				331C745C1FC81ECC00A5C116 /* Frameworks */,
+				331C745D1FC81ECC00A5C116 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				331C74661FC81ECC00A5C116 /* PBXTargetDependency */,
+			);
+			name = MagiciansTests;
+			productName = MagiciansTests;
+			productReference = 331C745F1FC81ECC00A5C116 /* MagiciansTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		3334886D1FA59EDD0014D851 /* Magicians macOS */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 333488731FA59EDD0014D851 /* Build configuration list for PBXNativeTarget "Magicians macOS" */;
@@ -154,8 +325,14 @@
 				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = alchemistxxd;
 				TargetAttributes = {
+					331C745E1FC81ECC00A5C116 = {
+						CreatedOnToolsVersion = 9.0.1;
+						DevelopmentTeam = NSHHQ757L6;
+						ProvisioningStyle = Automatic;
+					};
 					3334886D1FA59EDD0014D851 = {
 						CreatedOnToolsVersion = 9.0.1;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 					};
 					334B5F121EDAAE4300375186 = {
@@ -180,11 +357,19 @@
 			targets = (
 				334B5F121EDAAE4300375186 /* Magicians iOS */,
 				3334886D1FA59EDD0014D851 /* Magicians macOS */,
+				331C745E1FC81ECC00A5C116 /* MagiciansTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		331C745D1FC81ECC00A5C116 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3334886C1FA59EDD0014D851 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -202,6 +387,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		331C745B1FC81ECC00A5C116 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33990BC81FC9D69B0091EA8E /* ^BlockTest.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		333488691FA59EDD0014D851 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -210,6 +403,9 @@
 				333488811FA5B4210014D851 /* ScrollView.swift in Sources */,
 				3376FA811FA5C7F200701EB7 /* ViewController.swift in Sources */,
 				333488841FA5B62E0014D851 /* Utility.swift in Sources */,
+				337C9CF41FC6B29900099BF9 /* ^Block.mm in Sources */,
+				333A5CAE1FC3D4B9001597A6 /* NSArray+Sequence.mm in Sources */,
+				33B120911FB7451F00203A40 /* C++.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -217,20 +413,70 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				333A5CAD1FC3D4B9001597A6 /* NSArray+Sequence.mm in Sources */,
+				337C9CF31FC6B29900099BF9 /* ^Block.mm in Sources */,
+				33B120901FB7451F00203A40 /* C++.mm in Sources */,
 				333488831FA5B62E0014D851 /* Utility.swift in Sources */,
 				334B5F4B1EDAEAAB00375186 /* ScrollView.swift in Sources */,
 				333488781FA5A0050014D851 /* View.swift in Sources */,
 				334B5F531EDAF54500375186 /* ViewController.swift in Sources */,
+				33D1D2B61FBAE9AF005E82E4 /* Layout.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		331C74661FC81ECC00A5C116 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 334B5F121EDAAE4300375186 /* Magicians iOS */;
+			targetProxy = 331C74651FC81ECC00A5C116 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		331C74681FC81ECC00A5C116 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NSHHQ757L6;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = "Tests/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.-alchemistxxd.MagiciansTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		331C74691FC81ECC00A5C116 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NSHHQ757L6;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = "Tests/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.-alchemistxxd.MagiciansTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		333488741FA59EDD0014D851 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
@@ -248,6 +494,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_VERSION = A;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_PREFIX_HEADER = Source/Magicians.pch;
 				INFOPLIST_FILE = "$(SRCROOT)/Supporting Files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
@@ -256,6 +503,7 @@
 				PRODUCT_NAME = Magicians;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
@@ -263,7 +511,7 @@
 		333488751FA59EDD0014D851 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
@@ -281,6 +529,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_VERSION = A;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_PREFIX_HEADER = Source/Magicians.pch;
 				INFOPLIST_FILE = "$(SRCROOT)/Supporting Files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
@@ -299,7 +548,7 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++98";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
@@ -329,8 +578,10 @@
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -359,7 +610,7 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++98";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
@@ -388,7 +639,9 @@
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -409,6 +662,7 @@
 		334B5F1C1EDAAE4300375186 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
@@ -416,6 +670,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = Source/Magicians.pch;
 				INFOPLIST_FILE = "$(SRCROOT)/Supporting Files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -432,6 +687,7 @@
 		334B5F1D1EDAAE4300375186 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
@@ -439,6 +695,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = Source/Magicians.pch;
 				INFOPLIST_FILE = "$(SRCROOT)/Supporting Files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -454,6 +711,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		331C74671FC81ECC00A5C116 /* Build configuration list for PBXNativeTarget "MagiciansTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				331C74681FC81ECC00A5C116 /* Debug */,
+				331C74691FC81ECC00A5C116 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		333488731FA59EDD0014D851 /* Build configuration list for PBXNativeTarget "Magicians macOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
