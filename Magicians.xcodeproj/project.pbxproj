@@ -102,6 +102,7 @@
 		330016391FD689B4004A7A8D /* block.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = block.pch; sourceTree = "<group>"; };
 		3300163C1FD68E58004A7A8D /* block-runtime.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "block-runtime.h"; sourceTree = "<group>"; };
 		3300163F1FD6DE75004A7A8D /* Type Encodings.webarchive */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = "Type Encodings.webarchive"; sourceTree = "<group>"; };
+		330016401FD6DFD4004A7A8D /* Block Implementation Specification.webarchive */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = "Block Implementation Specification.webarchive"; sourceTree = "<group>"; };
 		330966C01FC9563300EBDB56 /* Sequence.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Sequence.pch; sourceTree = "<group>"; };
 		330D20741FD4451600DE0BF0 /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/Carbon.framework; sourceTree = DEVELOPER_DIR; };
 		330D20781FD44F2B00DE0BF0 /* KeyPath.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KeyPath.m; sourceTree = "<group>"; };
@@ -172,6 +173,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		330016411FD6DFF8004A7A8D /* Reference */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Reference;
+			sourceTree = "<group>";
+		};
 		330966C41FC971D700EBDB56 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
@@ -186,6 +194,7 @@
 			isa = PBXGroup;
 			children = (
 				330016391FD689B4004A7A8D /* block.pch */,
+				330016401FD6DFD4004A7A8D /* Block Implementation Specification.webarchive */,
 				337C9CEE1FC69A7100099BF9 /* block-abi.h */,
 				3300163C1FD68E58004A7A8D /* block-runtime.h */,
 				337C9CF21FC6B29900099BF9 /* block-runtime.mm */,
@@ -299,6 +308,7 @@
 			children = (
 				334B5F1E1EDAAECA00375186 /* Source */,
 				330966C41FC971D700EBDB56 /* Tests */,
+				330016411FD6DFF8004A7A8D /* Reference */,
 				334B5F2A1EDAAEED00375186 /* Supporting Files */,
 				33990BCD1FCAB6BE0091EA8E /* Deployment */,
 				334B5F141EDAAE4300375186 /* Products */,
