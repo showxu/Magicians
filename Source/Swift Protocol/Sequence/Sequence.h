@@ -6,7 +6,16 @@
 //  Copyright © 2017年 alchemistxxd. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+_Pragma("once")
+
+#import <objc/objc.h>
+
+@class NSArray;
+
+_Pragma("clang assume_nonnull begin")
+
+_Pragma("clang diagnostic push")
+_Pragma("clang diagnostic ignored \"-Wstrict-prototypes\"")
 
 @protocol Sequence
 
@@ -27,7 +36,7 @@
 ///   value of the same or of a different type.
 /// - Returns: An array containing the transformed elements of this
 ///   sequence.
-- (NSArray *(^)(id (^transform)()))map;
+- (NSArray *(^)(__attribute__((noescape)) id (^transform)()))map;
 
 /// Returns an array containing, in order, the elements of the sequence
 /// that satisfy the given predicate.
@@ -44,7 +53,7 @@
 ///   sequence as its argument and returns a Boolean value indicating
 ///   whether the element should be included in the returned array.
 /// - Returns: An array of the elements that `isIncluded` allowed.
-- (NSArray *(^)(BOOL (^isIncluded)()))filter;
+- (NSArray *(^)(__attribute__((noescape)) BOOL (^isIncluded)()))filter;
 
 /// Calls the given closure on each element in the sequence in the same order
 /// as a `for`-`in` loop.
@@ -75,7 +84,7 @@
 ///
 /// - Parameter body: A closure that takes an element of the sequence as a
 ///   parameter.
-- (NSArray *(^)(void (^body)()))forEach;
+- (NSArray *(^)(__attribute__((noescape)) void (^body)()))forEach;
 
 /// Returns a subsequence containing all but the given number of initial
 /// elements.
@@ -244,4 +253,7 @@
 
 @end
 
+_Pragma("clang diagnostic pop")
+
+_Pragma("clang assume_nonnull end")
 

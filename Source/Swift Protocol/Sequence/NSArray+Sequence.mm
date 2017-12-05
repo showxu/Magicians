@@ -7,7 +7,9 @@
 //
 
 #import "NSArray+Sequence.h"
-#import "^Block.h"
+
+#import <Foundation/NSException.h>
+#import <Foundation/NSNull.h>
 
 _Pragma("clang assume_nonnull begin")
 

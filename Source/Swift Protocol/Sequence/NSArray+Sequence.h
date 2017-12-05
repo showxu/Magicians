@@ -7,7 +7,7 @@
 //
 
 #import "Sequence.h"
-
+#import <Foundation/NSArray.h>
 
 _Pragma("clang assume_nonnull begin")
 
@@ -35,9 +35,4 @@ _Pragma("clang assume_nonnull begin")
 @end
 
 _Pragma("clang assume_nonnull end")
-
-//void test() {
-//    let array = [NSArray<NSObject *> alloc].init;
-//
-//}
 

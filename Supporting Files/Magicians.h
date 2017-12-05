@@ -5,11 +5,14 @@
 //  Copyright © 2017 alchemistxxd. All rights reserved.
 //
 
-@import Foundation;
+#import <Foundation/Foundation.h>
 
-#import "Magicians.pch"
-#import "^Block.h"
+#import "base.h"
+#import "objc.pch"
+#import "block.pch"
 #import "Sequence.pch"
+
+#import "CoreGraphics.h"
 
 //! Project version number for Magicians.
 FOUNDATION_EXPORT double MagiciansVersionNumber;

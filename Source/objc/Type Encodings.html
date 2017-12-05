@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Type Encodings</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=7">
+    <meta charset="utf-8">
+    <meta id="book-resource-type" name="book-resource-type" content="Guide">
+    <meta scheme="apple_ref" id="identifier" name="identifier" content="//apple_ref/doc/uid/TP40008048">
+    <meta id="document-version" name="document-version" content="1.8.0">
+    <meta id="build" name="build" content="3b40de4ca2af51e302b3b9b9306b0a3e" />
+    <meta id="chapterId" name="chapterId" content="TP40008048-CH100">
+    <meta id="date" name="date" content="2009-10-19">
+    <meta id="description" name="description" content="Describes the Objective-C 2.0 runtime support library.">
+    <meta id="book-title" name="book-title" content="Objective-C Runtime Programming Guide">
+    <meta id="book-root" name="book-root" content="../">
+    <meta id="book-json" name="book-json" content="../book.json">
+    <meta id="devcenter" name="devcenter" content="Mac Dev Center">
+    <meta id="devcenter-url" name="devcenter-url" content="http://developer.apple.com/devcenter/mac">
+    <meta id="reflib" name="reflib" content="Guides and Sample Code">
+    <meta id="book-assignments" name="book-assignments" content="{Type/Guide}, {Technologies/Core Services Layer/Foundation}, {Topic/Languages & Utilities/Objective-C}">
+    
+    
+    <meta id="copyright" name="copyright" content="Copyright 2017 Apple Inc. All Rights Reserved.">
+    <meta id="xcode-display" name="xcode-display" content="render">
+    <meta id="IndexTitle" name="IndexTitle" content="Objective-C Runtime Programming Guide: Type Encodings">
+    <meta id="resources-uri" name="resources-uri" content="../../../../../Resources/1274">
+    <link id="book-index-page" rel="Start" title="Objective-C Runtime Programming Guide" type="text/html" href="../index.html">
+    <link id="next-page" rel="Next" type="text/html" href="ocrtPropertyIntrospection.html">
+    <link id="previous-page" rel="Prev" type="text/html" href="ocrtForwarding.html">
+    <link rel="stylesheet" type="text/css" href="../../../../../Resources/1274/CSS/screen.css">
+    
+    <!-- xcode_css -->
+    <link rel="stylesheet" type="text/css" href="../../../../../Resources/1274/CSS/feedback.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta id="platforms" name="platforms" content="">
+</head>    
+<body><a name="//apple_ref/doc/uid/TP40008048-CH100" title="Type Encodings"></a>
+    <div id="_omniture_top">
+    <!-- SiteCatalyst code version: H.8. Copyright 1997-2006 Omniture, Inc. -->
+    <script type="text/javascript">
+    /* RSID: */
+    var s_account="appleglobal,appleusdeveloper,dappdeveloperlib"
+    </script>
+
+    <script type="text/javascript" src="https://www.apple.com/metrics/scripts/s_code_h.js"></script>
+    <script type="text/javascript">
+    s.pageName=AC.Tracking.pageName();
+    s.channel="www.us.developer"
+
+    /************* DO NOT ALTER ANYTHING BELOW THIS LINE ! **************/
+    var s_code=s.t();if(s_code)document.write(s_code)</script>
+    <!-- End SiteCatalyst code version: H.8. -->
+    </div>
+
+    <div id="adcHeader" class="hideOnPrint hideInXcode">
+        <div id='ssi_Header' class="hideInXcode unified">
+            <a id="ssi_LibraryTitle" href='../../../../../navigation/'>Guides and Sample Code</a>
+            <a id="ssi_AppleDeveloperConnection" href='https://developer.apple.com/'>Developer</a>
+            <div id='ssi_SearchButton' role="button" title="Search">Search</div>
+        </div>
+        <form id='ssi_SearchMenu' method='get' action='../../../../../search/' accept-charset='utf-8'>
+            <label for='adcsearch'>Search Guides and Sample Code</label>
+            
+            
+    
+            <input type='search' id='ssi_SearchField' name='q' accesskey='s' results='5' />
+        </form>
+    </div>
+
+    <header id="header">
+        <div id="title" role="banner">
+            <h1>Objective-C Runtime Programming Guide</h1>
+            <span id="file_links">
+                <a id="PDF_link" role="button" tabindex='4' rel="alternate" title="Download PDF"><span id="pdf_icon"></span>PDF</a>
+                <a id="Companion_link" role="button" tabindex='3' title="Download Companion File"><span id="companion_icon"></span>Companion File</a>
+            </span>
+        </div>
+        <ul id="headerButtons" class="hideOnPrint" role="toolbar">
+            <li id="toc_button" style="display:none">
+                <button tabindex="5" id="table_of_contents" class="open" role="checkbox" aria-label="Show Table of Contents"><span class="disclosure"></span>Table of Contents</button>
+            </li>
+            <li id="jumpto_button" style="display:none" role="navigation"><select tabindex="6" id="jumpTo"><option value="top">Jump To&#133;</option></select></li>
+            <li id="downloadSample_button" style="display:none">
+                <a id="Sample_link"><button id="Sample_button">Download Sample Code</button></a>
+            </li>
+        </ul>
+    </header>
+    <nav id="tocContainer" tabindex="7">
+        <ul id="toc" role="tree"></ul>
+    </nav>
+
+    <article id="contents" tabindex="0" role="main">
+        <div id="pageNavigationLinks_top" class="pageNavigationLinks">
+            <a class='nextLink' rel='next' href='ocrtPropertyIntrospection.html'>Next</a><a class='previousLink' rel='prev' href='ocrtForwarding.html'>Previous</a>
+        </div>
+        <a id="top" name="top"></a>
+        <a id="INDEX" href="../index.html" style="display:none;"></a>
+        
+        <a name="//apple_ref/doc/uid/TP40008048-CH100-SW1" title="Type Encodings"></a><h1 id="pageTitle">Type Encodings</h1><a name="//apple_ref/doc/uid/TP40008048-CH100-113054"></a><a name="//apple_ref/doc/uid/TP40008048-CH100-TPXREF165"></a><p><a name="//apple_ref/doc/uid/TP40008048-CH100-DontLinkElementID_52"></a>To assist the runtime system, the compiler encodes<a name="//apple_ref/doc/uid/TP40008048-CH100-DontLinkElementID_53"></a><a name="//apple_ref/doc/uid/TP40008048-CH100-DontLinkElementID_54"></a><a name="//apple_ref/doc/uid/TP40008048-CH100-DontLinkElementID_55"></a> the return<a name="//apple_ref/doc/uid/TP40008048-CH100-DontLinkElementID_56"></a> and argument types<a name="//apple_ref/doc/uid/TP40008048-CH100-DontLinkElementID_57"></a> for each method in a character string and associates the string with the method selector. The coding scheme it uses is also useful in other contexts and so is made publicly available with the <code>@encode()</code> compiler directive. When given a type specification, <code>@encode()</code> returns a string encoding that type. The type can be a basic type such as an <code>int</code>, a pointer, a tagged structure or union, or a class name—any type, in fact, that can be used as an argument to the C <code>sizeof()</code> operator.</p><div class="codesample clear"><table><tr><td scope="row"><pre>char *buf1 = @encode(int **);<span></span></pre></td></tr><tr><td scope="row"><pre>char *buf2 = @encode(struct key);<span></span></pre></td></tr><tr><td scope="row"><pre>char *buf3 = @encode(Rectangle);<span></span></pre></td></tr></table></div><p>The table below lists the type codes. Note that many of them overlap with the codes you use when encoding an object for purposes of archiving or distribution. However, there are codes listed here that you can’t use when writing a coder, and there are codes that you may want to use when writing a coder that aren’t generated by <code>@encode()</code><a name="//apple_ref/doc/uid/TP40008048-CH100-DontLinkElementID_58"></a><a name="//apple_ref/doc/uid/TP40008048-CH100-DontLinkElementID_59"></a>. (See the <code><a href="https://developer.apple.com/documentation/foundation/nscoder" class="urlLink" target="_self">NSCoder</a></code> class specification in the Foundation Framework reference for more information on encoding objects for archiving or distribution.)</p><a name="//apple_ref/doc/uid/TP40008048-CH100-105283" title="Table 6-1Objective-C type encodings"></a><a name="//apple_ref/doc/uid/TP40008048-CH100-BABGGCCF" title="Table 6-1Objective-C type encodings"></a><div class="tableholder"><table class="graybox" border = "0" cellspacing="0" cellpadding="5"><caption class="tablecaption"><strong class="caption_number">Table 6-1</strong>&nbsp;&nbsp;Objective-C type encodings</caption><tr><th scope="col" class="TableHeading_TableRow_TableCell"><p>Code</p></th><th scope="col" class="TableHeading_TableRow_TableCell"><p>Meaning</p></th></tr><tr><td  scope="row"><p><code>c</code></p></td><td ><p>A <code>char</code></p></td></tr><tr><td  scope="row"><p><code>i</code></p></td><td ><p>An <code>int</code></p></td></tr><tr><td  scope="row"><p><code>s</code></p></td><td ><p>A <code>short</code></p></td></tr><tr><td  scope="row"><p><code>l</code></p></td><td ><p>A <code>long</code></p><p><code>l</code> is treated as a 32-bit quantity on 64-bit programs.</p></td></tr><tr><td  scope="row"><p><code>q</code></p></td><td ><p>A <code>long long</code></p></td></tr><tr><td  scope="row"><p><code>C</code></p></td><td ><p>An <code>unsigned char</code></p></td></tr><tr><td  scope="row"><p><code>I</code></p></td><td ><p>An <code>unsigned int</code></p></td></tr><tr><td  scope="row"><p><code>S</code></p></td><td ><p>An <code>unsigned short</code></p></td></tr><tr><td  scope="row"><p><code>L</code></p></td><td ><p>An <code>unsigned long</code></p></td></tr><tr><td  scope="row"><p><code>Q</code></p></td><td ><p>An <code>unsigned long long</code></p></td></tr><tr><td  scope="row"><p><code>f</code></p></td><td ><p>A <code>float</code></p></td></tr><tr><td  scope="row"><p><code>d</code></p></td><td ><p>A <code>double</code></p></td></tr><tr><td  scope="row"><p><code>B</code></p></td><td ><p>A C++ <code>bool</code> or a C99 <code>_Bool</code></p></td></tr><tr><td  scope="row"><p><code>v</code></p></td><td ><p>A <code>void</code></p></td></tr><tr><td  scope="row"><p><code>*</code></p></td><td ><p>A character string (<code>char *</code>)</p></td></tr><tr><td  scope="row"><p><code>@</code></p></td><td ><p>An object (whether statically typed or typed <code>id</code>)</p></td></tr><tr><td  scope="row"><p><code>#</code></p></td><td ><p>A class object (<code>Class</code>)</p></td></tr><tr><td  scope="row"><p><code>:</code></p></td><td ><p>A method selector (<code>SEL</code>)</p></td></tr><tr><td  scope="row"><p>[<em>array type</em>] </p></td><td ><p>An array</p></td></tr><tr><td  scope="row"><p>{<em>name=type...</em>}</p></td><td ><p>A structure</p></td></tr><tr><td  scope="row"><p>(<em>name</em>=<em>type...</em>)</p></td><td ><p>A union</p></td></tr><tr><td  scope="row"><p><code>b</code>num</p></td><td ><p>A bit field of <em>num</em> bits</p></td></tr><tr><td  scope="row"><p><code>^</code>type</p></td><td ><p>A pointer to <em>type</em></p></td></tr><tr><td  scope="row"><p><code>?</code></p></td><td ><p>An unknown type (among other things, this code is used for function pointers)</p></td></tr></table></div><div class="importantbox clear"><aside><a name="//apple_ref/doc/uid/TP40008048-CH100-DontLinkElementID_4" title="Important"></a><p><strong>Important:</strong>&nbsp;Objective-C does not support the <code>long double</code> type. <code>@encode(long double)</code> returns <code>d</code>, which is the same encoding as for <code>double</code>.</p><p></p></aside></div><p>The type code for an array is enclosed within square brackets; the number of elements in the array is specified immediately after the open bracket, before the array type. For example, an array of 12 pointers to <code>float</code>s would be encoded as:</p><div class="codesample clear"><table><tr><td scope="row"><pre>[12^f]<span></span></pre></td></tr></table></div><p>Structures are specified within braces, and unions within parentheses. The structure tag is listed first, followed by an equal sign and the codes for the fields of the structure listed in sequence. For example, the structure</p><div class="codesample clear"><table><tr><td scope="row"><pre>typedef struct example {<span></span></pre></td></tr><tr><td scope="row"><pre>    id   anObject;<span></span></pre></td></tr><tr><td scope="row"><pre>    char *aString;<span></span></pre></td></tr><tr><td scope="row"><pre>    int  anInt;<span></span></pre></td></tr><tr><td scope="row"><pre>} Example;<span></span></pre></td></tr></table></div><p>would be encoded like this:</p><div class="codesample clear"><table><tr><td scope="row"><pre>{example=@*i}<span></span></pre></td></tr></table></div><p>The same encoding results whether the defined type name (<code>Example</code>) or the structure tag (<code>example</code>) is passed to <code>@encode()</code>. The encoding for a structure pointer carries the same amount of information about the structure’s fields:</p><div class="codesample clear"><table><tr><td scope="row"><pre>^{example=@*i}<span></span></pre></td></tr></table></div><p>However, another level of indirection removes the internal type specification:</p><div class="codesample clear"><table><tr><td scope="row"><pre>^^{example}<span></span></pre></td></tr></table></div><p>Objects are treated like structures. For example, passing the <code>NSObject</code> class name to <code>@encode()</code> yields this encoding:</p><div class="codesample clear"><table><tr><td scope="row"><pre>{NSObject=#}<span></span></pre></td></tr></table></div><p>The <code>NSObject</code> class declares just one instance variable, <code>isa</code>, of type Class.</p><p>Note that although the <code>@encode()</code> directive doesn’t return them, the runtime system uses the additional encodings listed in <span class="content_text">Table 6-2</span> for type qualifiers when they’re used to declare methods in a protocol<a name="//apple_ref/doc/uid/TP40008048-CH100-DontLinkElementID_60"></a>.</p><a name="//apple_ref/doc/uid/TP40008048-CH100-105288" title="Table 6-2Objective-C method encodings"></a><a name="//apple_ref/doc/uid/TP40008048-CH100-BABHAIFA" title="Table 6-2Objective-C method encodings"></a><div class="tableholder"><table class="graybox" border = "0" cellspacing="0" cellpadding="5"><caption class="tablecaption"><strong class="caption_number">Table 6-2</strong>&nbsp;&nbsp;Objective-C method encodings</caption><tr><th scope="col" class="TableHeading_TableRow_TableCell"><p>Code</p></th><th scope="col" class="TableHeading_TableRow_TableCell"><p>Meaning</p></th></tr><tr><td  scope="row"><p><code>r</code></p></td><td ><p><code>const</code><a name="//apple_ref/doc/uid/TP40008048-CH100-DontLinkElementID_61"></a></p></td></tr><tr><td  scope="row"><p><code>n</code></p></td><td ><p><code>in</code><a name="//apple_ref/doc/uid/TP40008048-CH100-DontLinkElementID_62"></a></p></td></tr><tr><td  scope="row"><p><code>N</code></p></td><td ><p><code>inout</code><a name="//apple_ref/doc/uid/TP40008048-CH100-DontLinkElementID_63"></a></p></td></tr><tr><td  scope="row"><p><code>o</code></p></td><td ><p><code>out</code><a name="//apple_ref/doc/uid/TP40008048-CH100-DontLinkElementID_64"></a></p></td></tr><tr><td  scope="row"><p><code>O</code></p></td><td ><p><code>bycopy</code><a name="//apple_ref/doc/uid/TP40008048-CH100-DontLinkElementID_65"></a></p></td></tr><tr><td  scope="row"><p><code>R</code></p></td><td ><p><code>byref</code><a name="//apple_ref/doc/uid/TP40008048-CH100-DontLinkElementID_66"></a></p></td></tr><tr><td  scope="row"><p><code>V</code></p></td><td ><p><code>oneway</code><a name="//apple_ref/doc/uid/TP40008048-CH100-DontLinkElementID_67"></a></p></td></tr></table></div>
+        <div id="pageNavigationLinks_bottom" class="pageNavigationLinks">
+            <a class='nextLink' rel='next' href='ocrtPropertyIntrospection.html'>Next</a><a class='previousLink' rel='prev' href='ocrtForwarding.html'>Previous</a>
+        </div><br/>
+        <div class="copyright"><br/><hr /><div align="center"><p class="content_text" lang="en" dir="ltr"> Copyright &#x00a9; 2009 Apple Inc. All Rights Reserved. <a href="http://www.apple.com/legal/internet-services/terms/site.html" target="_blank">Terms of Use</a>   |  <a href="http://www.apple.com/privacy/" target="_blank">Privacy Policy</a>  |  Updated: 2009-10-19</p></div></div>
+
+        <div id="pediaWindow">
+            <div id="pediaHeader"></div>
+            <div id="pediaBody"></div>
+        </div>
+    </article>
+
+    <div id="blackout">
+    <div id="preload"></div>
+</div>
+<div id="leave_feedback" class="button" role="button" tabindex="0">Feedback</div>
+<div id="modal" aria-hidden="true">
+    <div id="closebox" tabindex="0" aria-label="Close feedback form" role="button"></div>
+    <div id="sending" class="hidden">
+        <h2 tabindex="0">Sending feedback&hellip;</h2>
+        <div id="sending_img"></div>
+    </div>
+    <div id="error" class="hidden">
+        <h2 tabindex="0">We&rsquo;re sorry, an error has occurred.</h2>
+        <p>Please try submitting your feedback later.</p>
+        <div id="error_icon"></div>
+    </div>
+    <div id="success" class="hidden">
+        <h2 tabindex="0">Thank you for providing feedback!</h2>
+        <p>Your input helps improve our developer documentation.</p>
+        <div id="thank_you_icon"></div>
+    </div>
+    
+    <form id="feedback" action="#" method="post">
+        <div class="left-leaf">
+            <h2 id="helpful_title" data-asterisk="a1" tabindex="0">How helpful is this document?</h2>     
+            <sup id="a1" class="asterisk" aria-hidden="true">*</sup>
+
+            <div id="star_group" role="radiogroup" aria-required="true">
+                <label> 
+                    <input class="radio" type="radio" name="helped" value="1" /> 
+                    Very helpful
+                </label>
+                <label> 
+                    <input class="radio" type="radio" name="helped" value="2" /> 
+                    Somewhat helpful
+                </label>
+                <label>
+                    <input class="radio" type="radio" name="helped" value="3" /> 
+                    Not helpful
+                </label>
+            </div>
+        </div>
+        <div class="right-leaf">
+            <h2>How can we improve this document?</h2>
+            <div id="improve" class="checkboxes">
+                <label>
+                    <input type="checkbox" name="typo" /> 
+                    Fix typos or links
+                </label>
+                <label>
+                    <input type="checkbox" name="infoIncorrect" /> 
+                    Fix incorrect information
+                </label>
+                <label>
+                    <input type="checkbox" name="needs_examples" /> 
+                    Add or update code samples
+                </label>
+                <label>
+                    <input type="checkbox" name="needs_art" /> 
+                    Add or update illustrations
+                </label>
+                <label>
+                    <input type="checkbox" name="missingInfo" /> 
+                    Add information about...
+                </label>
+            </div>
+        </div>
+
+        <textarea id="comment" name="problem" cols="70" rows="8" placeholder="Please tell us more about your experience with this document" data-asterisk="a2" required></textarea>
+        <sup id="a2" class="asterisk" aria-hidden="true">*</sup>
+
+        <p class="fineprint">
+            <em aria-hidden="true"><span>*</span> Required information</em>
+        </p> 
+
+        <input id="submit" type="button" value="Send" />
+
+        <section id="legal">
+            <p>
+                To submit a product bug or enhancement request, please visit the 
+                <a href="https://developer.apple.com/bugreporter/" target="_blank">Bug Reporter</a> 
+                page.
+            </p>
+            <p>
+                Please read <a href="http://www.apple.com/legal/policies/ideas.html" target="_blank">Apple's Unsolicited Idea Submission Policy</a> 
+                before you send us your feedback.
+            </p> 
+        </section>
+    </form>
+</div>
+
+    
+    <script charset="utf-8" src="../../../../../Resources/1274/JavaScript/lib/prototype.js"></script>
+    <script src="../../../../../Resources/1274/JavaScript/library.js"></script>
+    <script src="../../../../../Resources/1274/JavaScript/feedback.js"></script>
+</body>
+</html>

@@ -6,12 +6,7 @@
 //  Copyright © 2016年 alchemistxxd. All rights reserved.
 //
 
-#import <Foundation/NSObjCRuntime.h>
-#import <os/base.h>
-
-@class NSMethodSignature;
-
-_Pragma("clang assume_nonnull begin")
+_Pragma("once")
 
 /// [Block Implementation Specification](https://clang.llvm.org/docs/Block-ABI-Apple.html)
 ///
@@ -36,13 +31,13 @@ _Pragma("clang assume_nonnull begin")
 ///         case (2<<29): ABI.2010.3.16, regular calling convention, presence of signature field
 ///         case (3<<29): ABI.2010.3.16, stret calling convention, presence of signature field,
 ///     }
-typedef NS_OPTIONS(int, block_flags) {
+typedef enum block_flags {
     BLOCK_HAS_COPY_DISPOSE =   (1 << 25),
     BLOCK_HAS_CTOR =          (1 << 26), // helpers have C++ code
     BLOCK_IS_GLOBAL =         (1 << 28),
     BLOCK_HAS_STRET =         (1 << 29), // IFF BLOCK_HAS_SIGNATURE
     BLOCK_HAS_SIGNATURE =     (1 << 30)
-};
+} block_flags;
 
 /// The ABI of Blocks consist of their layout and the runtime functions required by the compiler. A Block consists of a structure of the following form:
 ///
@@ -95,11 +90,13 @@ typedef NS_OPTIONS(int, block_flags) {
 ///         &__block_descriptor_1
 ///     };
 
+typedef char *block_token_t;
+
 struct block_class {
     Class isa; // initialized to &_NSConcreteStackBlock or &_NSConcreteGlobalBlock
     block_flags flags;
     int reserved;
-    void (__unused *invoke)(struct block_class *, ...);
+    void (*invoke)(struct block_class *, ...);
     struct {
         unsigned long int reserved;         // NULL
         unsigned long int size;             // sizeof(struct block_class)
@@ -115,43 +112,6 @@ struct block_class {
 
 typedef struct block_class * Block;
 
-/**
- * Returns the method signature definition of a specified block.
- *
- * @param block_literal The block literal to look up.
- *
- * @return The \c NSMethodSignature object for the block, or \c nil if the block
- *  does not have a signature.
- */
-OBJC_EXPORT
-NSMethodSignature * __nullable __unused block_getSignature(const id block_literal)
-    OBJC_AVAILABLE(10.0, 2.0, 9.0, 1.0, 2.0);
 
-/**
- * Returns the method signature definition of a specified block.
- *
- * @param block_sign The invoke signature of block literal.
- * @param method_sign The method sigature of objc_object.
- *
- * @return The \c NSMethodSignature object for the block, or \c nil if the block
- *  does not have a signature.
- */
-OBJC_EXPORT __attribute((overloadable))
-BOOL __unused block_matchSignature(const NSMethodSignature *block_sign, const NSMethodSignature *method_sign)
-    OBJC_AVAILABLE(10.0, 2.0, 9.0, 1.0, 2.0);
 
-/**
- * Returns the method signature definition of a specified block.
- *
- * @param block_literal The block literal to look up.
- * @param object The objc_objec
- * @param selector The objc_selector
- *
- * @return The \c NSMethodSignature object for the block, or \c nil if the block
- *  does not have a signature.
- */
-OBJC_EXPORT __attribute((overloadable))
-BOOL __unused block_matchSignature(const id block_literal, const id object, const SEL selector)
-    OBJC_AVAILABLE(10.0, 2.0, 9.0, 1.0, 2.0);
 
-_Pragma("clang assume_nonnull end")
