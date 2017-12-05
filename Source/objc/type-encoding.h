@@ -25,11 +25,3 @@ _Pragma("once")
 #endif
 char * getObjCTypes(const char types[]);
 
-
-#if defined(__cplusplus)
-extern "C"
-#else
-extern
-#endif
-char * getObjCTypes(const char types[]);
-

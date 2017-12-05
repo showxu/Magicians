@@ -97,11 +97,11 @@
 
 /* Begin PBXFileReference section */
 		3300162E1FD67ABE004A7A8D /* type-encoding.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "type-encoding.h"; sourceTree = "<group>"; };
-		330016311FD67C7D004A7A8D /* Type Encodings.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "Type Encodings.html"; sourceTree = "<group>"; };
 		330016331FD67F4E004A7A8D /* type-encoding.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "type-encoding.c"; sourceTree = "<group>"; };
 		330016361FD686CF004A7A8D /* objc.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = objc.pch; path = Source/objc/objc.pch; sourceTree = SOURCE_ROOT; };
 		330016391FD689B4004A7A8D /* block.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = block.pch; sourceTree = "<group>"; };
 		3300163C1FD68E58004A7A8D /* block-runtime.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "block-runtime.h"; sourceTree = "<group>"; };
+		3300163F1FD6DE75004A7A8D /* Type Encodings.webarchive */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = "Type Encodings.webarchive"; sourceTree = "<group>"; };
 		330966C01FC9563300EBDB56 /* Sequence.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Sequence.pch; sourceTree = "<group>"; };
 		330D20741FD4451600DE0BF0 /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/Carbon.framework; sourceTree = DEVELOPER_DIR; };
 		330D20781FD44F2B00DE0BF0 /* KeyPath.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KeyPath.m; sourceTree = "<group>"; };
@@ -389,7 +389,7 @@
 			isa = PBXGroup;
 			children = (
 				330016361FD686CF004A7A8D /* objc.pch */,
-				330016311FD67C7D004A7A8D /* Type Encodings.html */,
+				3300163F1FD6DE75004A7A8D /* Type Encodings.webarchive */,
 				3300162E1FD67ABE004A7A8D /* type-encoding.h */,
 				330016331FD67F4E004A7A8D /* type-encoding.c */,
 				33990BCF1FCAB9690091EA8E /* objc-runtime.h */,
