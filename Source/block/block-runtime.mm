@@ -6,8 +6,9 @@
 //  Copyright © 2016年 alchemistxxd. All rights reserved.
 //
 
-#import "block-abi.h"
 #import "block-runtime.h"
+
+#import "block-abi.h"
 #import "type-encoding.h"
 
 #import <objc/runtime.h>
@@ -16,7 +17,7 @@
 
 _Pragma("clang assume_nonnull begin")
 
-const char * block_getTypeEncoding(const id block_literal) {
+const char * block_getTypeEncoding(id block_literal) {
     // [A bridged cast is a C-style cast.](https://clang.llvm.org/docs/AutomaticReferenceCounting.html#bridged-casts )
     let block = (__bridge struct block_class *)block_literal;
     let flags = block->flags;
@@ -37,18 +38,17 @@ const char * block_getTypeEncoding(const id block_literal) {
     }) : nil;
 };
 
-const char * block_getObjCTypes(const id block_literal) {
+const char * block_copyObjCTypes(const id block_literal) {
     let s = block_getTypeEncoding(block_literal);
-    let types = getObjCTypes(s);
+    let types = copyObjCTypes(s);
     return types;
 };
-
 
 BOOL __unused
 block_getCompatibility(id block,
                        id object,
                        SEL sel) {
-    let block_types = block_getObjCTypes(block);
+    let block_types = block_copyObjCTypes(block);
     defer {
         free((void *)block_types);
     };

@@ -13,7 +13,7 @@
 #import <regex.h>
 #import <ctype.h>
 
-char * getObjCTypes(const char types[]) {
+char * copyObjCTypes(const char types[]) {
     let len = strlen(types);
     
     var result = (char *)malloc(len *sizeof(char));

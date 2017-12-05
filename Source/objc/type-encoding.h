@@ -16,12 +16,12 @@ _Pragma("once")
 
  @param types char[] to look up
  
- @return ObjcTypes. You must free the array with \c free().
+ @return ObjcTypes. You must free the c string with \c free().
  */
 #if defined(__cplusplus)
     extern "C"
 #else
     extern
 #endif
-char * getObjCTypes(const char types[]);
+char * copyObjCTypes(const char types[]);
 

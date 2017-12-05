@@ -112,6 +112,3 @@ struct block_class {
 
 typedef struct block_class * Block;
 
-
-
-
