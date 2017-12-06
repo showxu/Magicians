@@ -35,8 +35,8 @@
 		331DEA9A1FD1B857000F7979 /* base.h in Headers */ = {isa = PBXBuildFile; fileRef = 331DEA991FD1B857000F7979 /* base.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		331DEA9B1FD1B857000F7979 /* base.h in Headers */ = {isa = PBXBuildFile; fileRef = 331DEA991FD1B857000F7979 /* base.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		332D68AE1FCAE8ED00E027A8 /* runtimeTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 332D68AD1FCAE8ED00E027A8 /* runtimeTest.m */; };
-		333255511FD65B4700F78B71 /* CoreGraphics.h in Headers */ = {isa = PBXBuildFile; fileRef = 333255501FD65B4700F78B71 /* CoreGraphics.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		333255521FD65B4700F78B71 /* CoreGraphics.h in Headers */ = {isa = PBXBuildFile; fileRef = 333255501FD65B4700F78B71 /* CoreGraphics.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		333255511FD65B4700F78B71 /* boxable.h in Headers */ = {isa = PBXBuildFile; fileRef = 333255501FD65B4700F78B71 /* boxable.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		333255521FD65B4700F78B71 /* boxable.h in Headers */ = {isa = PBXBuildFile; fileRef = 333255501FD65B4700F78B71 /* boxable.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		333488761FA59F780014D851 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334B5F231EDAAECA00375186 /* View.swift */; };
 		333488781FA5A0050014D851 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334B5F231EDAAECA00375186 /* View.swift */; };
 		333488811FA5B4210014D851 /* ScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334B5F4A1EDAEAAB00375186 /* ScrollView.swift */; };
@@ -114,7 +114,7 @@
 		331DEA921FD18774000F7979 /* pragma.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = pragma.h; sourceTree = "<group>"; };
 		331DEA991FD1B857000F7979 /* base.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = base.h; sourceTree = "<group>"; };
 		332D68AD1FCAE8ED00E027A8 /* runtimeTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = runtimeTest.m; sourceTree = "<group>"; };
-		333255501FD65B4700F78B71 /* CoreGraphics.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoreGraphics.h; sourceTree = "<group>"; };
+		333255501FD65B4700F78B71 /* boxable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = boxable.h; sourceTree = "<group>"; };
 		3334886E1FA59EDD0014D851 /* Magicians.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Magicians.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		333488821FA5B62E0014D851 /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
 		333A5CA91FC3D4B9001597A6 /* NSArray+Sequence.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSArray+Sequence.h"; sourceTree = "<group>"; };
@@ -173,13 +173,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		330016411FD6DFF8004A7A8D /* Reference */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Reference;
-			sourceTree = "<group>";
-		};
 		330966C41FC971D700EBDB56 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
@@ -298,7 +291,7 @@
 		3332554F1FD65B2800F78B71 /* Cocoa */ = {
 			isa = PBXGroup;
 			children = (
-				333255501FD65B4700F78B71 /* CoreGraphics.h */,
+				333255501FD65B4700F78B71 /* boxable.h */,
 			);
 			path = Cocoa;
 			sourceTree = "<group>";
@@ -308,7 +301,6 @@
 			children = (
 				334B5F1E1EDAAECA00375186 /* Source */,
 				330966C41FC971D700EBDB56 /* Tests */,
-				330016411FD6DFF8004A7A8D /* Reference */,
 				334B5F2A1EDAAEED00375186 /* Supporting Files */,
 				33990BCD1FCAB6BE0091EA8E /* Deployment */,
 				334B5F141EDAAE4300375186 /* Products */,
@@ -435,7 +427,7 @@
 				330966C21FC9563300EBDB56 /* Sequence.pch in Headers */,
 				331DEA911FD1645A000F7979 /* objc-meta.h in Headers */,
 				330D208A1FD5398000DE0BF0 /* Array.h in Headers */,
-				333255521FD65B4700F78B71 /* CoreGraphics.h in Headers */,
+				333255521FD65B4700F78B71 /* boxable.h in Headers */,
 				331DEA9B1FD1B857000F7979 /* base.h in Headers */,
 				3300163B1FD689B4004A7A8D /* block.pch in Headers */,
 				330D207D1FD44F3D00DE0BF0 /* KeyPath.h in Headers */,
@@ -464,7 +456,7 @@
 				330966C11FC9563300EBDB56 /* Sequence.pch in Headers */,
 				331DEA901FD1645A000F7979 /* objc-meta.h in Headers */,
 				330D20891FD5398000DE0BF0 /* Array.h in Headers */,
-				333255511FD65B4700F78B71 /* CoreGraphics.h in Headers */,
+				333255511FD65B4700F78B71 /* boxable.h in Headers */,
 				331DEA9A1FD1B857000F7979 /* base.h in Headers */,
 				3300163A1FD689B4004A7A8D /* block.pch in Headers */,
 				330D207C1FD44F3D00DE0BF0 /* KeyPath.h in Headers */,

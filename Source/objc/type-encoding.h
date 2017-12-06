@@ -51,8 +51,7 @@ extern void
  @return A objc type. You must free the c string with \c free().
 */
 extern char * _Nullable
-    copyObjCType(const char types[_Nonnull], unsigned int index,
-                char * _Nullable dst, size_t dst_len);
+    copyObjCType(const char types[_Nonnull], unsigned int index, char * _Nullable dst, size_t dst_len);
 
 
 #if defined(__cplusplus)
