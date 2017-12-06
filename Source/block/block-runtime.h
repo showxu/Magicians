@@ -48,7 +48,7 @@ block_copyObjCTypes(id _Nonnull block)
  */
 OBJC_EXPORT size_t
 block_getNumberOfArguments(id _Nonnull block)
-    OBJC_AVAILABLE(10.0, 2.0, 9.0, 1.0, 2.0);
+    OBJC_AVAILABLE(10.0, 2.0, 9.0, 1.0, 2.0) __attribute__((enable_if(0, "unavailable")));
 
 /**
  * Returns a string describing a block's return type.
@@ -59,7 +59,7 @@ block_getNumberOfArguments(id _Nonnull block)
  */
 OBJC_EXPORT char * _Nonnull
 block_copyReturnType(id _Nonnull block)
-    OBJC_AVAILABLE(10.5, 2.0, 9.0, 1.0, 2.0);
+    OBJC_AVAILABLE(10.5, 2.0, 9.0, 1.0, 2.0) __attribute__((enable_if(0, "unavailable")));
 
 /**
  * Returns a string describing a single parameter type of a block.
@@ -74,7 +74,7 @@ block_copyReturnType(id _Nonnull block)
  */
 OBJC_EXPORT char * _Nullable
 block_copyArgumentType(id _Nonnull block, unsigned int index)
-    OBJC_AVAILABLE(10.5, 2.0, 9.0, 1.0, 2.0);
+    OBJC_AVAILABLE(10.5, 2.0, 9.0, 1.0, 2.0) __attribute__((enable_if(0, "unavailable")));
 
 /**
  * Returns by reference a string describing a block's return type.
@@ -88,7 +88,7 @@ block_copyArgumentType(id _Nonnull block, unsigned int index)
  */
 OBJC_EXPORT void
 block_getReturnType(id _Nonnull block, char * _Nonnull dst, size_t dst_len)
-    OBJC_AVAILABLE(10.5, 2.0, 9.0, 1.0, 2.0);
+    OBJC_AVAILABLE(10.5, 2.0, 9.0, 1.0, 2.0) __attribute__((enable_if(0, "unavailable")));
 
 /**
  * Returns by reference a string describing a single parameter type of a block.
@@ -105,20 +105,21 @@ block_getReturnType(id _Nonnull block, char * _Nonnull dst, size_t dst_len)
 OBJC_EXPORT void
 block_getArgumentType(id _Nonnull block, unsigned int index,
                        char * _Nullable dst, size_t dst_len)
-    OBJC_AVAILABLE(10.5, 2.0, 9.0, 1.0, 2.0);
+    OBJC_AVAILABLE(10.5, 2.0, 9.0, 1.0, 2.0) __attribute__((enable_if(0, "unavailable")));
 
 /**
  * Returns the ObjCTypes compatibility of a specified block with given object.
  *
  * @param block The block literal to look up.
- * @param object The objc_object
+ * @param cls The objc_class
  * @param sel The objc_selector
  *
  * @return YES for match, vice versa.
  */
 OBJC_EXPORT BOOL __unused
-block_getObjcTypesEquality(id _Nonnull block, id _Nonnull object, SEL sel)
-    OBJC_AVAILABLE(10.0, 2.0, 9.0, 1.0, 2.0);
+block_getObjcTypesCompatibility(id _Nonnull block, Class _Nonnull cls, SEL sel)
+    OBJC_AVAILABLE(10.0, 2.0, 9.0, 1.0, 2.0) __attribute__((enable_if(0, "unavailable")));
 
 _Pragma("clang assume_nonnull end")
+
 

@@ -9,6 +9,7 @@
 #import <XCTest/XCTest.h>
 #import "Magicians.h"
 
+#import <regex.h>
 #import <vector>
 #import <tuple>
 #import <array>
@@ -30,13 +31,16 @@
 }
 
 - (void)testExample {
-    let x0 = std::make_tuple((id)(^(BOOL animated) { return; }), [UIViewController new], @selector(viewWillAppear:), YES);
-    let x1 = std::make_tuple((id)(^(BOOL animated) { return; }), [UIViewController new], @selector(viewDidLoad), NO);
+    let b = ^(void (^x)(void)){
+        return ^(void (^)(void)){};
+    }; _Pragma("unused(b)")
+    let x0 = std::make_tuple((id)(^(BOOL animated) { return; }), UIViewController.self, @selector(viewWillAppear:), YES);
+    let x1 = std::make_tuple((id)(^(BOOL animated) { return; }), UIViewController.self, @selector(viewDidLoad), NO);
     let cases = std::array<std::tuple<id, id, SEL, BOOL>, 2> {x0, x1};
     
     std::for_each(cases.begin(), cases.end(), [self](std::tuple<id, id, SEL, BOOL> x) {
-        XCTAssertEqual(block_getCompatibility(std::get<0>(x), std::get<1>(x), std::get<2>(x)),
-                       std::get<3>(x));
+//        XCTAssertEqual(block_getObjcTypesEquality(std::get<0>(x), std::get<1>(x), std::get<2>(x)),
+//                       std::get<3>(x));
     });
 }
 

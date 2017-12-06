@@ -10,21 +10,6 @@
 @import Magicians;
 @import JavaScriptCore;
 
-@interface Object: NSObject
-
-@end
-
-@implementation Object
-
-- (NSString *)description {
-    return @"description";
-}
-
-- (NSString *)debugDescription {
-    return @"debugDescription";
-}
-
-@end
 
 @interface runtimeTest : XCTestCase
 

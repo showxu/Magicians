@@ -45,14 +45,14 @@ const char * block_copyObjCTypes(const id block_literal) {
 };
 
 BOOL __unused
-block_getCompatibility(id block,
-                       id object,
-                       SEL sel) {
+block_getObjcTypesEquality(id block,
+                           Class cls,
+                           SEL sel) {
     let block_types = block_copyObjCTypes(block);
     defer {
         free((void *)block_types);
     };
-    let method = class_getInstanceMethod(object_getClass(object), sel);
+    let method = class_getInstanceMethod(cls, sel);
     let argv_count = method_getNumberOfArguments(method);
     
     // TODO: argv number cmp
