@@ -11,6 +11,14 @@
 
 _Pragma("clang assume_nonnull begin")
 
+
+@interface NSArray<T>(FastEnumeration) <FastEnumeration>
+
+- (T)enumeratedType;
+
+@end
+
+
 @interface NSArray<T>()
 
 - (NSArray<T> *)copy
@@ -22,7 +30,7 @@ _Pragma("clang assume_nonnull begin")
 @end
 
 
-@interface NSArray<T>(Magicians) <Sequence> 
+@interface NSArray<T>(Sequence) <Sequence>
 
 - (__nullable T (^)(BOOL (^by)(T x, T y)))min;
 

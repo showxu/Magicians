@@ -10,12 +10,27 @@ _Pragma("once")
 
 #import <objc/objc.h>
 
+@protocol NSFastEnumeration;
 @class NSArray;
 
 _Pragma("clang assume_nonnull begin")
 
 _Pragma("clang diagnostic push")
 _Pragma("clang diagnostic ignored \"-Wstrict-prototypes\"")
+
+
+#define forEach(element, collection) \
+    for (typeof((collection).enumeratedType) element in (collection))
+
+@protocol FastEnumeration <NSFastEnumeration>
+
+@property (nonatomic, readonly) id enumeratedType;
+
+- (id)enumeratedType
+     __attribute__((noreturn));
+
+@end
+
 
 __attribute__((objc_runtime_name("__Sequence__")))
 @protocol Sequence

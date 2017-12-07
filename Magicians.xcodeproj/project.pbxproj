@@ -254,13 +254,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		330D20761FD44C0900DE0BF0 /* ObjC Support */ = {
+		330D20761FD44C0900DE0BF0 /* Cocoa Support */ = {
 			isa = PBXGroup;
 			children = (
+				3332554F1FD65B2800F78B71 /* Attribute */,
 				330016421FD80314004A7A8D /* Protocol */,
 				330D20771FD44C1600DE0BF0 /* Type */,
 			);
-			path = "ObjC Support";
+			path = "Cocoa Support";
 			sourceTree = "<group>";
 		};
 		330D20771FD44C1600DE0BF0 /* Type */ = {
@@ -308,12 +309,12 @@
 			path = runtimeTest;
 			sourceTree = "<group>";
 		};
-		3332554F1FD65B2800F78B71 /* Cocoa */ = {
+		3332554F1FD65B2800F78B71 /* Attribute */ = {
 			isa = PBXGroup;
 			children = (
 				333255501FD65B4700F78B71 /* Boxable.h */,
 			);
-			path = Cocoa;
+			path = Attribute;
 			sourceTree = "<group>";
 		};
 		334B5F091EDAAE4300375186 = {
@@ -348,8 +349,7 @@
 				33990BCE1FCAB6E20091EA8E /* ObjC Core */,
 				330966C91FC9720E00EBDB56 /* Block */,
 				33780DFF1FCD1F0F007262CB /* Key-Value Observing */,
-				3332554F1FD65B2800F78B71 /* Cocoa */,
-				330D20761FD44C0900DE0BF0 /* ObjC Support */,
+				330D20761FD44C0900DE0BF0 /* Cocoa Support */,
 				330966CD1FC972D200EBDB56 /* Swift Meta */,
 			);
 			path = Source;
