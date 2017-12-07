@@ -12,7 +12,7 @@
 #import "base.h"
 #import "objc.pch"
 #import "block.pch"
-#import "Sequence.pch"
+#import "Cocoa.pch"
 
 
 //! Project version number for Magicians.

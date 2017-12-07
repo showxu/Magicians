@@ -1,0 +1,17 @@
+//
+//  Cocoa.pch
+//  Magicians
+//
+//  Created by Alchemist on 2017/12/7.
+//  Copyright © 2017年 alchemistxxd. All rights reserved.
+//
+
+_Pragma("once")
+
+#ifndef Cocoa_pch
+#define Cocoa_pch
+
+#import "Sequence.pch"
+
+
+#endif

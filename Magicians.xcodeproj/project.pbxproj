@@ -19,6 +19,8 @@
 		330016491FD846A3004A7A8D /* clang-module.h in Headers */ = {isa = PBXBuildFile; fileRef = 330016471FD846A2004A7A8D /* clang-module.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3300164B1FD8FCF8004A7A8D /* objc.pch in Headers */ = {isa = PBXBuildFile; fileRef = 3300164A1FD8FCF8004A7A8D /* objc.pch */; settings = {ATTRIBUTES = (Public, ); }; };
 		3300164C1FD8FCF8004A7A8D /* objc.pch in Headers */ = {isa = PBXBuildFile; fileRef = 3300164A1FD8FCF8004A7A8D /* objc.pch */; settings = {ATTRIBUTES = (Public, ); }; };
+		330016501FD92900004A7A8D /* Cocoa.pch in Headers */ = {isa = PBXBuildFile; fileRef = 3300164F1FD92900004A7A8D /* Cocoa.pch */; settings = {ATTRIBUTES = (Public, ); }; };
+		330016511FD92900004A7A8D /* Cocoa.pch in Headers */ = {isa = PBXBuildFile; fileRef = 3300164F1FD92900004A7A8D /* Cocoa.pch */; settings = {ATTRIBUTES = (Public, ); }; };
 		330966C11FC9563300EBDB56 /* Sequence.pch in Headers */ = {isa = PBXBuildFile; fileRef = 330966C01FC9563300EBDB56 /* Sequence.pch */; settings = {ATTRIBUTES = (Public, ); }; };
 		330966C21FC9563300EBDB56 /* Sequence.pch in Headers */ = {isa = PBXBuildFile; fileRef = 330966C01FC9563300EBDB56 /* Sequence.pch */; settings = {ATTRIBUTES = (Public, ); }; };
 		330D20791FD44F2B00DE0BF0 /* KeyPath.m in Sources */ = {isa = PBXBuildFile; fileRef = 330D20781FD44F2B00DE0BF0 /* KeyPath.m */; };
@@ -106,6 +108,7 @@
 		330016401FD6DFD4004A7A8D /* Block Implementation Specification.webarchive */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = "Block Implementation Specification.webarchive"; sourceTree = "<group>"; };
 		330016471FD846A2004A7A8D /* clang-module.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "clang-module.h"; sourceTree = "<group>"; };
 		3300164A1FD8FCF8004A7A8D /* objc.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = objc.pch; sourceTree = "<group>"; };
+		3300164F1FD92900004A7A8D /* Cocoa.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Cocoa.pch; sourceTree = "<group>"; };
 		330966C01FC9563300EBDB56 /* Sequence.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Sequence.pch; sourceTree = "<group>"; };
 		330D20741FD4451600DE0BF0 /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/Carbon.framework; sourceTree = DEVELOPER_DIR; };
 		330D20781FD44F2B00DE0BF0 /* KeyPath.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KeyPath.m; sourceTree = "<group>"; };
@@ -265,6 +268,7 @@
 		330D20761FD44C0900DE0BF0 /* Cocoa Support */ = {
 			isa = PBXGroup;
 			children = (
+				3300164F1FD92900004A7A8D /* Cocoa.pch */,
 				3332554F1FD65B2800F78B71 /* Attribute */,
 				330016421FD80314004A7A8D /* Protocol */,
 				330D20771FD44C1600DE0BF0 /* Type */,
@@ -446,6 +450,7 @@
 				333A5CB51FC436A4001597A6 /* Sequence.h in Headers */,
 				3300163E1FD68E59004A7A8D /* block-runtime.h in Headers */,
 				33A05FD61FD5471D0093FD54 /* objc-layout.h in Headers */,
+				330016511FD92900004A7A8D /* Cocoa.pch in Headers */,
 				333A5CAC1FC3D4B9001597A6 /* NSArray+Sequence.h in Headers */,
 				337C9CF01FC69A7100099BF9 /* block-abi.h in Headers */,
 				337C9CFE1FC6D7C600099BF9 /* RawRepresentable.h in Headers */,
@@ -476,6 +481,7 @@
 				333A5CB41FC436A4001597A6 /* Sequence.h in Headers */,
 				3300163D1FD68E59004A7A8D /* block-runtime.h in Headers */,
 				33A05FD51FD5471D0093FD54 /* objc-layout.h in Headers */,
+				330016501FD92900004A7A8D /* Cocoa.pch in Headers */,
 				337C9CFD1FC6D7C600099BF9 /* RawRepresentable.h in Headers */,
 				333A5CAB1FC3D4B9001597A6 /* NSArray+Sequence.h in Headers */,
 				33990BD01FCAB9690091EA8E /* objc-runtime.h in Headers */,
