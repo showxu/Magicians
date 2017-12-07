@@ -13,9 +13,11 @@ _Pragma("clang assume_nonnull begin")
 
 @interface NSArray<T>()
 
-- (NSArray<T> *)copy;
+- (NSArray<T> *)copy
+    __attribute__((objc_requires_super));
 
-- (NSMutableArray<T> *)mutableCopy;
+- (NSMutableArray<T> *)mutableCopy
+    __attribute__((objc_requires_super));
 
 @end
 

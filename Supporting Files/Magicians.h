@@ -7,12 +7,13 @@
 
 #import <Foundation/Foundation.h>
 
+#import "clang-module.h"
+
 #import "base.h"
 #import "objc.pch"
 #import "block.pch"
 #import "Sequence.pch"
 
-#import "CoreGraphics.h"
 
 //! Project version number for Magicians.
 FOUNDATION_EXPORT double MagiciansVersionNumber;

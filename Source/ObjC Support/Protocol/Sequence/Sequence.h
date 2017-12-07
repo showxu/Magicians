@@ -17,6 +17,7 @@ _Pragma("clang assume_nonnull begin")
 _Pragma("clang diagnostic push")
 _Pragma("clang diagnostic ignored \"-Wstrict-prototypes\"")
 
+__attribute__((objc_runtime_name("__Sequence__")))
 @protocol Sequence
 
 /// Returns an array containing the results of mapping the given closure

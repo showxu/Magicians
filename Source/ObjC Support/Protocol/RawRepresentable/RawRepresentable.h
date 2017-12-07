@@ -120,7 +120,7 @@
 ///     // Prints "nil"
 ///
 /// - Parameter rawValue: The raw value to use for the new instance.
-- (instancetype)initWithRawValue:(id)rawValue;
+- (instancetype)initWithRawValue:(id)rawValue; 
 
 /// The corresponding value of the raw type.
 ///

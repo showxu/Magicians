@@ -53,7 +53,6 @@ extern void
 extern char * _Nullable
     copyObjCType(const char types[_Nonnull], unsigned int index, char * _Nullable dst, size_t dst_len);
 
-
 #if defined(__cplusplus)
 }
 #endif

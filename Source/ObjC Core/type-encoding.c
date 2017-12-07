@@ -13,8 +13,11 @@
 #import <regex.h>
 #import <ctype.h>
 
-char * _Nullable copyObjCTypes(const char types[]) {
+
+char * _Nullable copyObjCTypes(types)
+    const char types[]; {
     let len = strlen(types);
+        
     var result = (char *)malloc(len *sizeof(char));
     for (var x = 0, y = 0; x < len; x ++) {
         let c = types[x];
@@ -26,7 +29,8 @@ char * _Nullable copyObjCTypes(const char types[]) {
     return result;
 }
 
-void getObjCTypes(const char types[_Nonnull], char * _Nullable dst, size_t dst_len) {
+void getObjCTypes(types, dst, dst_len)
+    const char types[]; char * _Nullable dst; size_t dst_len; {
     let objc_types = copyObjCTypes(types);
     defer {
         free(objc_types);

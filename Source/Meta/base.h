@@ -46,9 +46,9 @@ _Pragma("clang diagnostic pop")
     defer_block(line)
 
 #define defer \
-    __strong defer_block_t defer_at(__LINE__) __attribute__((cleanup(cleanup), unused)) = ^
-    
-    
+    __strong defer_block_t defer_at(__LINE__) \
+        __attribute__((cleanup(cleanup), unused)) = ^
+
 #if defined(__cplusplus)
 }
 #endif
