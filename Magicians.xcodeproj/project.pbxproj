@@ -193,6 +193,15 @@
 			path = Module;
 			sourceTree = "<group>";
 		};
+		3300164E1FD90769004A7A8D /* Documentation */ = {
+			isa = PBXGroup;
+			children = (
+				330016401FD6DFD4004A7A8D /* Block Implementation Specification.webarchive */,
+				3300163F1FD6DE75004A7A8D /* Type Encodings.webarchive */,
+			);
+			path = Documentation;
+			sourceTree = "<group>";
+		};
 		330966C41FC971D700EBDB56 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
@@ -207,7 +216,6 @@
 			isa = PBXGroup;
 			children = (
 				330016391FD689B4004A7A8D /* block.pch */,
-				330016401FD6DFD4004A7A8D /* Block Implementation Specification.webarchive */,
 				337C9CEE1FC69A7100099BF9 /* block-abi.h */,
 				3300163C1FD68E58004A7A8D /* block-runtime.h */,
 				337C9CF21FC6B29900099BF9 /* block-runtime.mm */,
@@ -323,6 +331,7 @@
 				334B5F1E1EDAAECA00375186 /* Source */,
 				334B5F2A1EDAAEED00375186 /* Supporting Files */,
 				33990BCD1FCAB6BE0091EA8E /* Deployment */,
+				3300164E1FD90769004A7A8D /* Documentation */,
 				330966C41FC971D700EBDB56 /* Tests */,
 				334B5F141EDAAE4300375186 /* Products */,
 				330D20731FD4451600DE0BF0 /* Frameworks */,
@@ -411,7 +420,6 @@
 			isa = PBXGroup;
 			children = (
 				3300164A1FD8FCF8004A7A8D /* objc.pch */,
-				3300163F1FD6DE75004A7A8D /* Type Encodings.webarchive */,
 				3300162E1FD67ABE004A7A8D /* type-encoding.h */,
 				330016331FD67F4E004A7A8D /* type-encoding.c */,
 				33990BCF1FCAB9690091EA8E /* objc-runtime.h */,
