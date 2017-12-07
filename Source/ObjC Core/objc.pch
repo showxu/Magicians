@@ -1,0 +1,14 @@
+//
+//  objc.pch
+//  Magicians
+//
+//  Created by Alchemist on 2017/12/5.
+//  Copyright © 2017年 alchemistxxd. All rights reserved.
+//
+
+_Pragma("once")
+
+#import "type-encoding.h"
+#import "objc-runtime.h"
+#import "objc-layout.h"
+#import "objc-debug.h"

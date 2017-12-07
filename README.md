@@ -1,6 +1,4 @@
 # Magicians
-
-[![Join the chat at https://gitter.im/0xxd0/Magicians](https://badges.gitter.im/0xxd0/Magicians.svg)](https://gitter.im/0xxd0/Magicians?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 [![CocoaPods Compatible](https://img.shields.io/cocoapods/v/Magicians.svg)](https://img.shields.io/cocoapods/v/Magicians.svg)
 [![Platform](https://img.shields.io/cocoapods/p/Magicians.svg?style=flat)](https://alamofire.github.io/Magicians)
 [![Gitter](https://badges.gitter.im/0xxd0/Magicians.svg)](https://gitter.im/0xxd0/Magicians?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)

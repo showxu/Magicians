@@ -7,30 +7,158 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3300162F1FD67ABE004A7A8D /* type-encoding.h in Headers */ = {isa = PBXBuildFile; fileRef = 3300162E1FD67ABE004A7A8D /* type-encoding.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		330016301FD67ABE004A7A8D /* type-encoding.h in Headers */ = {isa = PBXBuildFile; fileRef = 3300162E1FD67ABE004A7A8D /* type-encoding.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		330016341FD67F4E004A7A8D /* type-encoding.c in Sources */ = {isa = PBXBuildFile; fileRef = 330016331FD67F4E004A7A8D /* type-encoding.c */; };
+		330016351FD67F4E004A7A8D /* type-encoding.c in Sources */ = {isa = PBXBuildFile; fileRef = 330016331FD67F4E004A7A8D /* type-encoding.c */; };
+		3300163A1FD689B4004A7A8D /* block.pch in Headers */ = {isa = PBXBuildFile; fileRef = 330016391FD689B4004A7A8D /* block.pch */; settings = {ATTRIBUTES = (Public, ); }; };
+		3300163B1FD689B4004A7A8D /* block.pch in Headers */ = {isa = PBXBuildFile; fileRef = 330016391FD689B4004A7A8D /* block.pch */; };
+		3300163D1FD68E59004A7A8D /* block-runtime.h in Headers */ = {isa = PBXBuildFile; fileRef = 3300163C1FD68E58004A7A8D /* block-runtime.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3300163E1FD68E59004A7A8D /* block-runtime.h in Headers */ = {isa = PBXBuildFile; fileRef = 3300163C1FD68E58004A7A8D /* block-runtime.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		330016481FD846A3004A7A8D /* clang-module.h in Headers */ = {isa = PBXBuildFile; fileRef = 330016471FD846A2004A7A8D /* clang-module.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		330016491FD846A3004A7A8D /* clang-module.h in Headers */ = {isa = PBXBuildFile; fileRef = 330016471FD846A2004A7A8D /* clang-module.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3300164B1FD8FCF8004A7A8D /* objc.pch in Headers */ = {isa = PBXBuildFile; fileRef = 3300164A1FD8FCF8004A7A8D /* objc.pch */; settings = {ATTRIBUTES = (Public, ); }; };
+		3300164C1FD8FCF8004A7A8D /* objc.pch in Headers */ = {isa = PBXBuildFile; fileRef = 3300164A1FD8FCF8004A7A8D /* objc.pch */; settings = {ATTRIBUTES = (Public, ); }; };
+		330966C11FC9563300EBDB56 /* Sequence.pch in Headers */ = {isa = PBXBuildFile; fileRef = 330966C01FC9563300EBDB56 /* Sequence.pch */; settings = {ATTRIBUTES = (Public, ); }; };
+		330966C21FC9563300EBDB56 /* Sequence.pch in Headers */ = {isa = PBXBuildFile; fileRef = 330966C01FC9563300EBDB56 /* Sequence.pch */; settings = {ATTRIBUTES = (Public, ); }; };
+		330D20791FD44F2B00DE0BF0 /* KeyPath.m in Sources */ = {isa = PBXBuildFile; fileRef = 330D20781FD44F2B00DE0BF0 /* KeyPath.m */; };
+		330D207A1FD44F2B00DE0BF0 /* KeyPath.m in Sources */ = {isa = PBXBuildFile; fileRef = 330D20781FD44F2B00DE0BF0 /* KeyPath.m */; };
+		330D207C1FD44F3D00DE0BF0 /* KeyPath.h in Headers */ = {isa = PBXBuildFile; fileRef = 330D207B1FD44F3D00DE0BF0 /* KeyPath.h */; };
+		330D207D1FD44F3D00DE0BF0 /* KeyPath.h in Headers */ = {isa = PBXBuildFile; fileRef = 330D207B1FD44F3D00DE0BF0 /* KeyPath.h */; };
+		330D20891FD5398000DE0BF0 /* Array.h in Headers */ = {isa = PBXBuildFile; fileRef = 330D20871FD5398000DE0BF0 /* Array.h */; };
+		330D208A1FD5398000DE0BF0 /* Array.h in Headers */ = {isa = PBXBuildFile; fileRef = 330D20871FD5398000DE0BF0 /* Array.h */; };
+		330D208B1FD5398000DE0BF0 /* Array.c in Sources */ = {isa = PBXBuildFile; fileRef = 330D20881FD5398000DE0BF0 /* Array.c */; };
+		330D208C1FD5398000DE0BF0 /* Array.c in Sources */ = {isa = PBXBuildFile; fileRef = 330D20881FD5398000DE0BF0 /* Array.c */; };
+		331C74641FC81ECC00A5C116 /* Magicians.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 334B5F131EDAAE4300375186 /* Magicians.framework */; };
+		331DEA901FD1645A000F7979 /* objc-meta.h in Headers */ = {isa = PBXBuildFile; fileRef = 331DEA8F1FD1645A000F7979 /* objc-meta.h */; };
+		331DEA911FD1645A000F7979 /* objc-meta.h in Headers */ = {isa = PBXBuildFile; fileRef = 331DEA8F1FD1645A000F7979 /* objc-meta.h */; };
+		331DEA931FD18774000F7979 /* pragma.h in Headers */ = {isa = PBXBuildFile; fileRef = 331DEA921FD18774000F7979 /* pragma.h */; };
+		331DEA941FD18774000F7979 /* pragma.h in Headers */ = {isa = PBXBuildFile; fileRef = 331DEA921FD18774000F7979 /* pragma.h */; };
+		331DEA9A1FD1B857000F7979 /* base.h in Headers */ = {isa = PBXBuildFile; fileRef = 331DEA991FD1B857000F7979 /* base.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		331DEA9B1FD1B857000F7979 /* base.h in Headers */ = {isa = PBXBuildFile; fileRef = 331DEA991FD1B857000F7979 /* base.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		332D68AE1FCAE8ED00E027A8 /* runtimeTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 332D68AD1FCAE8ED00E027A8 /* runtimeTest.m */; };
+		333255511FD65B4700F78B71 /* Boxable.h in Headers */ = {isa = PBXBuildFile; fileRef = 333255501FD65B4700F78B71 /* Boxable.h */; };
+		333255521FD65B4700F78B71 /* Boxable.h in Headers */ = {isa = PBXBuildFile; fileRef = 333255501FD65B4700F78B71 /* Boxable.h */; };
 		333488761FA59F780014D851 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334B5F231EDAAECA00375186 /* View.swift */; };
 		333488781FA5A0050014D851 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334B5F231EDAAECA00375186 /* View.swift */; };
 		333488811FA5B4210014D851 /* ScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334B5F4A1EDAEAAB00375186 /* ScrollView.swift */; };
 		333488831FA5B62E0014D851 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333488821FA5B62E0014D851 /* Utility.swift */; };
 		333488841FA5B62E0014D851 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333488821FA5B62E0014D851 /* Utility.swift */; };
+		333A5CAB1FC3D4B9001597A6 /* NSArray+Sequence.h in Headers */ = {isa = PBXBuildFile; fileRef = 333A5CA91FC3D4B9001597A6 /* NSArray+Sequence.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		333A5CAC1FC3D4B9001597A6 /* NSArray+Sequence.h in Headers */ = {isa = PBXBuildFile; fileRef = 333A5CA91FC3D4B9001597A6 /* NSArray+Sequence.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		333A5CAD1FC3D4B9001597A6 /* NSArray+Sequence.mm in Sources */ = {isa = PBXBuildFile; fileRef = 333A5CAA1FC3D4B9001597A6 /* NSArray+Sequence.mm */; };
+		333A5CAE1FC3D4B9001597A6 /* NSArray+Sequence.mm in Sources */ = {isa = PBXBuildFile; fileRef = 333A5CAA1FC3D4B9001597A6 /* NSArray+Sequence.mm */; };
+		333A5CB41FC436A4001597A6 /* Sequence.h in Headers */ = {isa = PBXBuildFile; fileRef = 333A5CB31FC436A4001597A6 /* Sequence.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		333A5CB51FC436A4001597A6 /* Sequence.h in Headers */ = {isa = PBXBuildFile; fileRef = 333A5CB31FC436A4001597A6 /* Sequence.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		334B5F241EDAAECA00375186 /* Magicians.h in Headers */ = {isa = PBXBuildFile; fileRef = 334B5F1F1EDAAECA00375186 /* Magicians.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		334B5F4B1EDAEAAB00375186 /* ScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334B5F4A1EDAEAAB00375186 /* ScrollView.swift */; };
 		334B5F531EDAF54500375186 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334B5F521EDAF54500375186 /* ViewController.swift */; };
 		3376FA811FA5C7F200701EB7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334B5F521EDAF54500375186 /* ViewController.swift */; };
 		3376FA8D1FA5EF9500701EB7 /* Magicians.h in Headers */ = {isa = PBXBuildFile; fileRef = 334B5F1F1EDAAECA00375186 /* Magicians.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		33780E021FCD1F5E007262CB /* objc-kvo.h in Headers */ = {isa = PBXBuildFile; fileRef = 33780E001FCD1F5E007262CB /* objc-kvo.h */; };
+		33780E031FCD1F5E007262CB /* objc-kvo.h in Headers */ = {isa = PBXBuildFile; fileRef = 33780E001FCD1F5E007262CB /* objc-kvo.h */; };
+		33780E041FCD1F5E007262CB /* objc-kvo.mm in Sources */ = {isa = PBXBuildFile; fileRef = 33780E011FCD1F5E007262CB /* objc-kvo.mm */; };
+		33780E051FCD1F5E007262CB /* objc-kvo.mm in Sources */ = {isa = PBXBuildFile; fileRef = 33780E011FCD1F5E007262CB /* objc-kvo.mm */; };
+		337C9CEF1FC69A7100099BF9 /* block-abi.h in Headers */ = {isa = PBXBuildFile; fileRef = 337C9CEE1FC69A7100099BF9 /* block-abi.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		337C9CF01FC69A7100099BF9 /* block-abi.h in Headers */ = {isa = PBXBuildFile; fileRef = 337C9CEE1FC69A7100099BF9 /* block-abi.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		337C9CF31FC6B29900099BF9 /* block-runtime.mm in Sources */ = {isa = PBXBuildFile; fileRef = 337C9CF21FC6B29900099BF9 /* block-runtime.mm */; };
+		337C9CF41FC6B29900099BF9 /* block-runtime.mm in Sources */ = {isa = PBXBuildFile; fileRef = 337C9CF21FC6B29900099BF9 /* block-runtime.mm */; };
+		337C9CFD1FC6D7C600099BF9 /* RawRepresentable.h in Headers */ = {isa = PBXBuildFile; fileRef = 337C9CFC1FC6D7C600099BF9 /* RawRepresentable.h */; };
+		337C9CFE1FC6D7C600099BF9 /* RawRepresentable.h in Headers */ = {isa = PBXBuildFile; fileRef = 337C9CFC1FC6D7C600099BF9 /* RawRepresentable.h */; };
+		3383F8231FD3F7800033966C /* c-meta.h in Headers */ = {isa = PBXBuildFile; fileRef = 3383F8221FD3F7800033966C /* c-meta.h */; };
+		3383F8241FD3F7800033966C /* c-meta.h in Headers */ = {isa = PBXBuildFile; fileRef = 3383F8221FD3F7800033966C /* c-meta.h */; };
+		3383F8281FD4207A0033966C /* fishhook.h in Headers */ = {isa = PBXBuildFile; fileRef = 3383F8261FD420790033966C /* fishhook.h */; };
+		3383F8291FD4207A0033966C /* fishhook.h in Headers */ = {isa = PBXBuildFile; fileRef = 3383F8261FD420790033966C /* fishhook.h */; };
+		3383F82A1FD4207A0033966C /* fishhook.c in Sources */ = {isa = PBXBuildFile; fileRef = 3383F8271FD4207A0033966C /* fishhook.c */; };
+		3383F82B1FD4207A0033966C /* fishhook.c in Sources */ = {isa = PBXBuildFile; fileRef = 3383F8271FD4207A0033966C /* fishhook.c */; };
+		33990BC81FC9D69B0091EA8E /* BlockTest.mm in Sources */ = {isa = PBXBuildFile; fileRef = 33990BC31FC9D68F0091EA8E /* BlockTest.mm */; };
+		33990BD01FCAB9690091EA8E /* objc-runtime.h in Headers */ = {isa = PBXBuildFile; fileRef = 33990BCF1FCAB9690091EA8E /* objc-runtime.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		33990BD11FCAB9690091EA8E /* objc-runtime.h in Headers */ = {isa = PBXBuildFile; fileRef = 33990BCF1FCAB9690091EA8E /* objc-runtime.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		33A05FD21FD5470E0093FD54 /* objc-layout.mm in Sources */ = {isa = PBXBuildFile; fileRef = 33A05FD11FD5470E0093FD54 /* objc-layout.mm */; };
+		33A05FD31FD5470E0093FD54 /* objc-layout.mm in Sources */ = {isa = PBXBuildFile; fileRef = 33A05FD11FD5470E0093FD54 /* objc-layout.mm */; };
+		33A05FD51FD5471D0093FD54 /* objc-layout.h in Headers */ = {isa = PBXBuildFile; fileRef = 33A05FD41FD5471D0093FD54 /* objc-layout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		33A05FD61FD5471D0093FD54 /* objc-layout.h in Headers */ = {isa = PBXBuildFile; fileRef = 33A05FD41FD5471D0093FD54 /* objc-layout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		33A05FD81FD590C20093FD54 /* objc-debug.mm in Sources */ = {isa = PBXBuildFile; fileRef = 33A05FD71FD590C20093FD54 /* objc-debug.mm */; };
+		33A05FD91FD590C20093FD54 /* objc-debug.mm in Sources */ = {isa = PBXBuildFile; fileRef = 33A05FD71FD590C20093FD54 /* objc-debug.mm */; };
+		33A05FDB1FD590D00093FD54 /* objc-debug.h in Headers */ = {isa = PBXBuildFile; fileRef = 33A05FDA1FD590D00093FD54 /* objc-debug.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		33A05FDC1FD590D00093FD54 /* objc-debug.h in Headers */ = {isa = PBXBuildFile; fileRef = 33A05FDA1FD590D00093FD54 /* objc-debug.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		33B0EDCE1FCABBB800995C36 /* objc-runtime.mm in Sources */ = {isa = PBXBuildFile; fileRef = 33B0EDCD1FCABBB800995C36 /* objc-runtime.mm */; };
+		33B0EDCF1FCABBB800995C36 /* objc-runtime.mm in Sources */ = {isa = PBXBuildFile; fileRef = 33B0EDCD1FCABBB800995C36 /* objc-runtime.mm */; };
+		33D1D2B61FBAE9AF005E82E4 /* Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D1D2B51FBAE9AF005E82E4 /* Layout.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		331C74651FC81ECC00A5C116 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 334B5F0A1EDAAE4300375186 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 334B5F121EDAAE4300375186;
+			remoteInfo = "Magicians iOS";
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		3300162E1FD67ABE004A7A8D /* type-encoding.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "type-encoding.h"; sourceTree = "<group>"; };
+		330016331FD67F4E004A7A8D /* type-encoding.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "type-encoding.c"; sourceTree = "<group>"; };
+		330016391FD689B4004A7A8D /* block.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = block.pch; sourceTree = "<group>"; };
+		3300163C1FD68E58004A7A8D /* block-runtime.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "block-runtime.h"; sourceTree = "<group>"; };
+		3300163F1FD6DE75004A7A8D /* Type Encodings.webarchive */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = "Type Encodings.webarchive"; sourceTree = "<group>"; };
+		330016401FD6DFD4004A7A8D /* Block Implementation Specification.webarchive */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = "Block Implementation Specification.webarchive"; sourceTree = "<group>"; };
+		330016471FD846A2004A7A8D /* clang-module.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "clang-module.h"; sourceTree = "<group>"; };
+		3300164A1FD8FCF8004A7A8D /* objc.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = objc.pch; sourceTree = "<group>"; };
+		330966C01FC9563300EBDB56 /* Sequence.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Sequence.pch; sourceTree = "<group>"; };
+		330D20741FD4451600DE0BF0 /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/Carbon.framework; sourceTree = DEVELOPER_DIR; };
+		330D20781FD44F2B00DE0BF0 /* KeyPath.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KeyPath.m; sourceTree = "<group>"; };
+		330D207B1FD44F3D00DE0BF0 /* KeyPath.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KeyPath.h; sourceTree = "<group>"; };
+		330D20871FD5398000DE0BF0 /* Array.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Array.h; sourceTree = "<group>"; };
+		330D20881FD5398000DE0BF0 /* Array.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = Array.c; sourceTree = "<group>"; };
+		331C745F1FC81ECC00A5C116 /* MagiciansTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MagiciansTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		331DEA8F1FD1645A000F7979 /* objc-meta.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "objc-meta.h"; sourceTree = "<group>"; };
+		331DEA921FD18774000F7979 /* pragma.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = pragma.h; sourceTree = "<group>"; };
+		331DEA991FD1B857000F7979 /* base.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = base.h; sourceTree = "<group>"; };
+		332D68AD1FCAE8ED00E027A8 /* runtimeTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = runtimeTest.m; sourceTree = "<group>"; };
+		333255501FD65B4700F78B71 /* Boxable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Boxable.h; sourceTree = "<group>"; };
 		3334886E1FA59EDD0014D851 /* Magicians.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Magicians.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		333488821FA5B62E0014D851 /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
+		333A5CA91FC3D4B9001597A6 /* NSArray+Sequence.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSArray+Sequence.h"; sourceTree = "<group>"; };
+		333A5CAA1FC3D4B9001597A6 /* NSArray+Sequence.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = "NSArray+Sequence.mm"; sourceTree = "<group>"; };
+		333A5CB31FC436A4001597A6 /* Sequence.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Sequence.h; sourceTree = "<group>"; };
 		334B5F131EDAAE4300375186 /* Magicians.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Magicians.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		334B5F1F1EDAAECA00375186 /* Magicians.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Magicians.h; sourceTree = "<group>"; };
 		334B5F231EDAAECA00375186 /* View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
 		334B5F2B1EDAAEED00375186 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		334B5F4A1EDAEAAB00375186 /* ScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrollView.swift; sourceTree = "<group>"; };
 		334B5F521EDAF54500375186 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		33780E001FCD1F5E007262CB /* objc-kvo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "objc-kvo.h"; sourceTree = "<group>"; };
+		33780E011FCD1F5E007262CB /* objc-kvo.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = "objc-kvo.mm"; sourceTree = "<group>"; };
+		337C9CEE1FC69A7100099BF9 /* block-abi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "block-abi.h"; sourceTree = "<group>"; };
+		337C9CF21FC6B29900099BF9 /* block-runtime.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = "block-runtime.mm"; sourceTree = "<group>"; };
+		337C9CFC1FC6D7C600099BF9 /* RawRepresentable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RawRepresentable.h; sourceTree = "<group>"; };
+		3383F8221FD3F7800033966C /* c-meta.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "c-meta.h"; sourceTree = "<group>"; };
+		3383F8261FD420790033966C /* fishhook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fishhook.h; sourceTree = "<group>"; };
+		3383F8271FD4207A0033966C /* fishhook.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fishhook.c; sourceTree = "<group>"; };
+		33990BC11FC9D68F0091EA8E /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		33990BC31FC9D68F0091EA8E /* BlockTest.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BlockTest.mm; sourceTree = "<group>"; };
+		33990BCF1FCAB9690091EA8E /* objc-runtime.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "objc-runtime.h"; sourceTree = "<group>"; };
+		33A05FD11FD5470E0093FD54 /* objc-layout.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = "objc-layout.mm"; sourceTree = "<group>"; };
+		33A05FD41FD5471D0093FD54 /* objc-layout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "objc-layout.h"; sourceTree = "<group>"; };
+		33A05FD71FD590C20093FD54 /* objc-debug.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = "objc-debug.mm"; sourceTree = "<group>"; };
+		33A05FDA1FD590D00093FD54 /* objc-debug.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "objc-debug.h"; sourceTree = "<group>"; };
+		33B0EDCD1FCABBB800995C36 /* objc-runtime.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = "objc-runtime.mm"; sourceTree = "<group>"; };
+		33B1207E1FB734C500203A40 /* Magicians.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; fileEncoding = 4; path = Magicians.podspec; sourceTree = SOURCE_ROOT; };
+		33B120801FB7354A00203A40 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
+		33D1D2B51FBAE9AF005E82E4 /* Layout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Layout.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		331C745C1FC81ECC00A5C116 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				331C74641FC81ECC00A5C116 /* Magicians.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3334886A1FA59EDD0014D851 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -48,12 +176,165 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		330016421FD80314004A7A8D /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				330966CB1FC9723600EBDB56 /* Sequence */,
+				330966CC1FC9725200EBDB56 /* RawRepresentable */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		330016431FD8454F004A7A8D /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				330016471FD846A2004A7A8D /* clang-module.h */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		3300164E1FD90769004A7A8D /* Documentation */ = {
+			isa = PBXGroup;
+			children = (
+				330016401FD6DFD4004A7A8D /* Block Implementation Specification.webarchive */,
+				3300163F1FD6DE75004A7A8D /* Type Encodings.webarchive */,
+			);
+			path = Documentation;
+			sourceTree = "<group>";
+		};
+		330966C41FC971D700EBDB56 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				332D68AC1FCAE8C700E027A8 /* runtimeTest */,
+				33990BC21FC9D68F0091EA8E /* BlockTest */,
+				33990BC01FC9D68F0091EA8E /* Supporting Files */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		330966C91FC9720E00EBDB56 /* Block */ = {
+			isa = PBXGroup;
+			children = (
+				330016391FD689B4004A7A8D /* block.pch */,
+				337C9CEE1FC69A7100099BF9 /* block-abi.h */,
+				3300163C1FD68E58004A7A8D /* block-runtime.h */,
+				337C9CF21FC6B29900099BF9 /* block-runtime.mm */,
+			);
+			path = Block;
+			sourceTree = "<group>";
+		};
+		330966CB1FC9723600EBDB56 /* Sequence */ = {
+			isa = PBXGroup;
+			children = (
+				330966C01FC9563300EBDB56 /* Sequence.pch */,
+				333A5CB31FC436A4001597A6 /* Sequence.h */,
+				333A5CA91FC3D4B9001597A6 /* NSArray+Sequence.h */,
+				333A5CAA1FC3D4B9001597A6 /* NSArray+Sequence.mm */,
+			);
+			path = Sequence;
+			sourceTree = "<group>";
+		};
+		330966CC1FC9725200EBDB56 /* RawRepresentable */ = {
+			isa = PBXGroup;
+			children = (
+				337C9CFC1FC6D7C600099BF9 /* RawRepresentable.h */,
+			);
+			path = RawRepresentable;
+			sourceTree = "<group>";
+		};
+		330966CD1FC972D200EBDB56 /* Swift Meta */ = {
+			isa = PBXGroup;
+			children = (
+				333488821FA5B62E0014D851 /* Utility.swift */,
+				334B5F231EDAAECA00375186 /* View.swift */,
+				334B5F4A1EDAEAAB00375186 /* ScrollView.swift */,
+				334B5F521EDAF54500375186 /* ViewController.swift */,
+				33D1D2B51FBAE9AF005E82E4 /* Layout.swift */,
+			);
+			path = "Swift Meta";
+			sourceTree = "<group>";
+		};
+		330D20731FD4451600DE0BF0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				330D20741FD4451600DE0BF0 /* Carbon.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		330D20761FD44C0900DE0BF0 /* Cocoa Support */ = {
+			isa = PBXGroup;
+			children = (
+				3332554F1FD65B2800F78B71 /* Attribute */,
+				330016421FD80314004A7A8D /* Protocol */,
+				330D20771FD44C1600DE0BF0 /* Type */,
+			);
+			path = "Cocoa Support";
+			sourceTree = "<group>";
+		};
+		330D20771FD44C1600DE0BF0 /* Type */ = {
+			isa = PBXGroup;
+			children = (
+				330D207E1FD44F5B00DE0BF0 /* KeyPath */,
+			);
+			path = Type;
+			sourceTree = "<group>";
+		};
+		330D207E1FD44F5B00DE0BF0 /* KeyPath */ = {
+			isa = PBXGroup;
+			children = (
+				330D207B1FD44F3D00DE0BF0 /* KeyPath.h */,
+				330D20781FD44F2B00DE0BF0 /* KeyPath.m */,
+			);
+			path = KeyPath;
+			sourceTree = "<group>";
+		};
+		330D20861FD533B300DE0BF0 /* Built-in Type */ = {
+			isa = PBXGroup;
+			children = (
+				330D20871FD5398000DE0BF0 /* Array.h */,
+				330D20881FD5398000DE0BF0 /* Array.c */,
+			);
+			path = "Built-in Type";
+			sourceTree = "<group>";
+		};
+		331DEA981FD1B83E000F7979 /* Meta */ = {
+			isa = PBXGroup;
+			children = (
+				331DEA991FD1B857000F7979 /* base.h */,
+				3383F8221FD3F7800033966C /* c-meta.h */,
+				331DEA8F1FD1645A000F7979 /* objc-meta.h */,
+				331DEA921FD18774000F7979 /* pragma.h */,
+			);
+			path = Meta;
+			sourceTree = "<group>";
+		};
+		332D68AC1FCAE8C700E027A8 /* runtimeTest */ = {
+			isa = PBXGroup;
+			children = (
+				332D68AD1FCAE8ED00E027A8 /* runtimeTest.m */,
+			);
+			path = runtimeTest;
+			sourceTree = "<group>";
+		};
+		3332554F1FD65B2800F78B71 /* Attribute */ = {
+			isa = PBXGroup;
+			children = (
+				333255501FD65B4700F78B71 /* Boxable.h */,
+			);
+			path = Attribute;
+			sourceTree = "<group>";
+		};
 		334B5F091EDAAE4300375186 = {
 			isa = PBXGroup;
 			children = (
 				334B5F1E1EDAAECA00375186 /* Source */,
 				334B5F2A1EDAAEED00375186 /* Supporting Files */,
+				33990BCD1FCAB6BE0091EA8E /* Deployment */,
+				3300164E1FD90769004A7A8D /* Documentation */,
+				330966C41FC971D700EBDB56 /* Tests */,
 				334B5F141EDAAE4300375186 /* Products */,
+				330D20731FD4451600DE0BF0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,6 +343,7 @@
 			children = (
 				334B5F131EDAAE4300375186 /* Magicians.framework */,
 				3334886E1FA59EDD0014D851 /* Magicians.framework */,
+				331C745F1FC81ECC00A5C116 /* MagiciansTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -69,10 +351,15 @@
 		334B5F1E1EDAAECA00375186 /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				333488821FA5B62E0014D851 /* Utility.swift */,
-				334B5F231EDAAECA00375186 /* View.swift */,
-				334B5F4A1EDAEAAB00375186 /* ScrollView.swift */,
-				334B5F521EDAF54500375186 /* ViewController.swift */,
+				330016431FD8454F004A7A8D /* Module */,
+				331DEA981FD1B83E000F7979 /* Meta */,
+				3383F8251FD41FE30033966C /* Mach-O */,
+				330D20861FD533B300DE0BF0 /* Built-in Type */,
+				33990BCE1FCAB6E20091EA8E /* ObjC Core */,
+				330966C91FC9720E00EBDB56 /* Block */,
+				33780DFF1FCD1F0F007262CB /* Key-Value Observing */,
+				330D20761FD44C0900DE0BF0 /* Cocoa Support */,
+				330966CD1FC972D200EBDB56 /* Swift Meta */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -86,6 +373,65 @@
 			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		33780DFF1FCD1F0F007262CB /* Key-Value Observing */ = {
+			isa = PBXGroup;
+			children = (
+				33780E001FCD1F5E007262CB /* objc-kvo.h */,
+				33780E011FCD1F5E007262CB /* objc-kvo.mm */,
+			);
+			path = "Key-Value Observing";
+			sourceTree = "<group>";
+		};
+		3383F8251FD41FE30033966C /* Mach-O */ = {
+			isa = PBXGroup;
+			children = (
+				3383F8261FD420790033966C /* fishhook.h */,
+				3383F8271FD4207A0033966C /* fishhook.c */,
+			);
+			path = "Mach-O";
+			sourceTree = "<group>";
+		};
+		33990BC01FC9D68F0091EA8E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				33990BC11FC9D68F0091EA8E /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		33990BC21FC9D68F0091EA8E /* BlockTest */ = {
+			isa = PBXGroup;
+			children = (
+				33990BC31FC9D68F0091EA8E /* BlockTest.mm */,
+			);
+			path = BlockTest;
+			sourceTree = "<group>";
+		};
+		33990BCD1FCAB6BE0091EA8E /* Deployment */ = {
+			isa = PBXGroup;
+			children = (
+				33B1207E1FB734C500203A40 /* Magicians.podspec */,
+				33B120801FB7354A00203A40 /* README.md */,
+			);
+			name = Deployment;
+			sourceTree = "<group>";
+		};
+		33990BCE1FCAB6E20091EA8E /* ObjC Core */ = {
+			isa = PBXGroup;
+			children = (
+				3300164A1FD8FCF8004A7A8D /* objc.pch */,
+				3300162E1FD67ABE004A7A8D /* type-encoding.h */,
+				330016331FD67F4E004A7A8D /* type-encoding.c */,
+				33990BCF1FCAB9690091EA8E /* objc-runtime.h */,
+				33B0EDCD1FCABBB800995C36 /* objc-runtime.mm */,
+				33A05FD41FD5471D0093FD54 /* objc-layout.h */,
+				33A05FD11FD5470E0093FD54 /* objc-layout.mm */,
+				33A05FDA1FD590D00093FD54 /* objc-debug.h */,
+				33A05FD71FD590C20093FD54 /* objc-debug.mm */,
+			);
+			path = "ObjC Core";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -94,6 +440,28 @@
 			buildActionMask = 2147483647;
 			files = (
 				3376FA8D1FA5EF9500701EB7 /* Magicians.h in Headers */,
+				3383F8241FD3F7800033966C /* c-meta.h in Headers */,
+				3383F8291FD4207A0033966C /* fishhook.h in Headers */,
+				331DEA941FD18774000F7979 /* pragma.h in Headers */,
+				333A5CB51FC436A4001597A6 /* Sequence.h in Headers */,
+				3300163E1FD68E59004A7A8D /* block-runtime.h in Headers */,
+				33A05FD61FD5471D0093FD54 /* objc-layout.h in Headers */,
+				333A5CAC1FC3D4B9001597A6 /* NSArray+Sequence.h in Headers */,
+				337C9CF01FC69A7100099BF9 /* block-abi.h in Headers */,
+				337C9CFE1FC6D7C600099BF9 /* RawRepresentable.h in Headers */,
+				330016301FD67ABE004A7A8D /* type-encoding.h in Headers */,
+				33990BD11FCAB9690091EA8E /* objc-runtime.h in Headers */,
+				33780E031FCD1F5E007262CB /* objc-kvo.h in Headers */,
+				330016491FD846A3004A7A8D /* clang-module.h in Headers */,
+				330966C21FC9563300EBDB56 /* Sequence.pch in Headers */,
+				331DEA911FD1645A000F7979 /* objc-meta.h in Headers */,
+				330D208A1FD5398000DE0BF0 /* Array.h in Headers */,
+				333255521FD65B4700F78B71 /* Boxable.h in Headers */,
+				331DEA9B1FD1B857000F7979 /* base.h in Headers */,
+				3300163B1FD689B4004A7A8D /* block.pch in Headers */,
+				330D207D1FD44F3D00DE0BF0 /* KeyPath.h in Headers */,
+				33A05FDC1FD590D00093FD54 /* objc-debug.h in Headers */,
+				3300164C1FD8FCF8004A7A8D /* objc.pch in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -102,12 +470,52 @@
 			buildActionMask = 2147483647;
 			files = (
 				334B5F241EDAAECA00375186 /* Magicians.h in Headers */,
+				3383F8231FD3F7800033966C /* c-meta.h in Headers */,
+				3383F8281FD4207A0033966C /* fishhook.h in Headers */,
+				331DEA931FD18774000F7979 /* pragma.h in Headers */,
+				333A5CB41FC436A4001597A6 /* Sequence.h in Headers */,
+				3300163D1FD68E59004A7A8D /* block-runtime.h in Headers */,
+				33A05FD51FD5471D0093FD54 /* objc-layout.h in Headers */,
+				337C9CFD1FC6D7C600099BF9 /* RawRepresentable.h in Headers */,
+				333A5CAB1FC3D4B9001597A6 /* NSArray+Sequence.h in Headers */,
+				33990BD01FCAB9690091EA8E /* objc-runtime.h in Headers */,
+				3300162F1FD67ABE004A7A8D /* type-encoding.h in Headers */,
+				33780E021FCD1F5E007262CB /* objc-kvo.h in Headers */,
+				337C9CEF1FC69A7100099BF9 /* block-abi.h in Headers */,
+				330016481FD846A3004A7A8D /* clang-module.h in Headers */,
+				330966C11FC9563300EBDB56 /* Sequence.pch in Headers */,
+				331DEA901FD1645A000F7979 /* objc-meta.h in Headers */,
+				330D20891FD5398000DE0BF0 /* Array.h in Headers */,
+				333255511FD65B4700F78B71 /* Boxable.h in Headers */,
+				331DEA9A1FD1B857000F7979 /* base.h in Headers */,
+				3300163A1FD689B4004A7A8D /* block.pch in Headers */,
+				330D207C1FD44F3D00DE0BF0 /* KeyPath.h in Headers */,
+				33A05FDB1FD590D00093FD54 /* objc-debug.h in Headers */,
+				3300164B1FD8FCF8004A7A8D /* objc.pch in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		331C745E1FC81ECC00A5C116 /* MagiciansTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 331C74671FC81ECC00A5C116 /* Build configuration list for PBXNativeTarget "MagiciansTests" */;
+			buildPhases = (
+				331C745B1FC81ECC00A5C116 /* Sources */,
+				331C745C1FC81ECC00A5C116 /* Frameworks */,
+				331C745D1FC81ECC00A5C116 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				331C74661FC81ECC00A5C116 /* PBXTargetDependency */,
+			);
+			name = MagiciansTests;
+			productName = MagiciansTests;
+			productReference = 331C745F1FC81ECC00A5C116 /* MagiciansTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		3334886D1FA59EDD0014D851 /* Magicians macOS */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 333488731FA59EDD0014D851 /* Build configuration list for PBXNativeTarget "Magicians macOS" */;
@@ -154,8 +562,14 @@
 				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = alchemistxxd;
 				TargetAttributes = {
+					331C745E1FC81ECC00A5C116 = {
+						CreatedOnToolsVersion = 9.0.1;
+						DevelopmentTeam = NSHHQ757L6;
+						ProvisioningStyle = Automatic;
+					};
 					3334886D1FA59EDD0014D851 = {
 						CreatedOnToolsVersion = 9.0.1;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 					};
 					334B5F121EDAAE4300375186 = {
@@ -180,11 +594,19 @@
 			targets = (
 				334B5F121EDAAE4300375186 /* Magicians iOS */,
 				3334886D1FA59EDD0014D851 /* Magicians macOS */,
+				331C745E1FC81ECC00A5C116 /* MagiciansTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		331C745D1FC81ECC00A5C116 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3334886C1FA59EDD0014D851 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -202,14 +624,33 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		331C745B1FC81ECC00A5C116 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				332D68AE1FCAE8ED00E027A8 /* runtimeTest.m in Sources */,
+				33990BC81FC9D69B0091EA8E /* BlockTest.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		333488691FA59EDD0014D851 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				333488761FA59F780014D851 /* View.swift in Sources */,
+				330D208C1FD5398000DE0BF0 /* Array.c in Sources */,
 				333488811FA5B4210014D851 /* ScrollView.swift in Sources */,
+				33A05FD31FD5470E0093FD54 /* objc-layout.mm in Sources */,
+				330016351FD67F4E004A7A8D /* type-encoding.c in Sources */,
+				33B0EDCF1FCABBB800995C36 /* objc-runtime.mm in Sources */,
 				3376FA811FA5C7F200701EB7 /* ViewController.swift in Sources */,
 				333488841FA5B62E0014D851 /* Utility.swift in Sources */,
+				337C9CF41FC6B29900099BF9 /* block-runtime.mm in Sources */,
+				3383F82B1FD4207A0033966C /* fishhook.c in Sources */,
+				333A5CAE1FC3D4B9001597A6 /* NSArray+Sequence.mm in Sources */,
+				33780E051FCD1F5E007262CB /* objc-kvo.mm in Sources */,
+				33A05FD91FD590C20093FD54 /* objc-debug.mm in Sources */,
+				330D207A1FD44F2B00DE0BF0 /* KeyPath.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -217,20 +658,77 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				333A5CAD1FC3D4B9001597A6 /* NSArray+Sequence.mm in Sources */,
+				337C9CF31FC6B29900099BF9 /* block-runtime.mm in Sources */,
+				330D20791FD44F2B00DE0BF0 /* KeyPath.m in Sources */,
 				333488831FA5B62E0014D851 /* Utility.swift in Sources */,
+				3383F82A1FD4207A0033966C /* fishhook.c in Sources */,
+				330016341FD67F4E004A7A8D /* type-encoding.c in Sources */,
+				330D208B1FD5398000DE0BF0 /* Array.c in Sources */,
 				334B5F4B1EDAEAAB00375186 /* ScrollView.swift in Sources */,
+				33A05FD81FD590C20093FD54 /* objc-debug.mm in Sources */,
+				33780E041FCD1F5E007262CB /* objc-kvo.mm in Sources */,
 				333488781FA5A0050014D851 /* View.swift in Sources */,
+				33A05FD21FD5470E0093FD54 /* objc-layout.mm in Sources */,
+				33B0EDCE1FCABBB800995C36 /* objc-runtime.mm in Sources */,
 				334B5F531EDAF54500375186 /* ViewController.swift in Sources */,
+				33D1D2B61FBAE9AF005E82E4 /* Layout.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		331C74661FC81ECC00A5C116 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 334B5F121EDAAE4300375186 /* Magicians iOS */;
+			targetProxy = 331C74651FC81ECC00A5C116 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		331C74681FC81ECC00A5C116 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NSHHQ757L6;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = "Tests/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.alchemistxxd.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		331C74691FC81ECC00A5C116 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NSHHQ757L6;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = "Tests/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.alchemistxxd.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		333488741FA59EDD0014D851 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
@@ -248,14 +746,16 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_VERSION = A;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_PREFIX_HEADER = Source/meta/base.h;
 				INFOPLIST_FILE = "$(SRCROOT)/Supporting Files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
-				PRODUCT_BUNDLE_IDENTIFIER = com.alchemistxxd.Magicians;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.alchemistxxd.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = Magicians;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
@@ -263,7 +763,7 @@
 		333488751FA59EDD0014D851 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
@@ -281,11 +781,12 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_VERSION = A;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_PREFIX_HEADER = Source/meta/base.h;
 				INFOPLIST_FILE = "$(SRCROOT)/Supporting Files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
-				PRODUCT_BUNDLE_IDENTIFIER = com.alchemistxxd.Magicians;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.alchemistxxd.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = Magicians;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
@@ -299,7 +800,7 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++98";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
@@ -329,8 +830,10 @@
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -359,7 +862,7 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++98";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
@@ -388,7 +891,9 @@
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -409,6 +914,7 @@
 		334B5F1C1EDAAE4300375186 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
@@ -416,11 +922,12 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = Source/meta/base.h;
 				INFOPLIST_FILE = "$(SRCROOT)/Supporting Files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.alchemistxxd.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.alchemistxxd.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = Magicians;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -432,6 +939,7 @@
 		334B5F1D1EDAAE4300375186 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
@@ -439,11 +947,12 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = Source/meta/base.h;
 				INFOPLIST_FILE = "$(SRCROOT)/Supporting Files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.alchemistxxd.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.alchemistxxd.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = Magicians;
 				SKIP_INSTALL = YES;
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
@@ -454,6 +963,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		331C74671FC81ECC00A5C116 /* Build configuration list for PBXNativeTarget "MagiciansTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				331C74681FC81ECC00A5C116 /* Debug */,
+				331C74691FC81ECC00A5C116 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		333488731FA59EDD0014D851 /* Build configuration list for PBXNativeTarget "Magicians macOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
