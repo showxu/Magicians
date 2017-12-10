@@ -15,7 +15,6 @@
 // MARK: - UIView @IBInspectable extension
 @IBDesignable
 extension UIView {
-    
     @IBInspectable public var cornerRadius: CGFloat {
         get {
             return layer.cornerRadius

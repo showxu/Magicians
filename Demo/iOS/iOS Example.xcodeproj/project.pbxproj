@@ -11,33 +11,8 @@
 		333488B61FA5BA770014D851 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 333488AD1FA5BA760014D851 /* LaunchScreen.storyboard */; };
 		333488B71FA5BA770014D851 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 333488AF1FA5BA760014D851 /* Main.storyboard */; };
 		333488B91FA5BA770014D851 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333488B31FA5BA770014D851 /* AppDelegate.swift */; };
-		3376FA7C1FA5C5BC00701EB7 /* Magicians.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33B49B291FA5C427000F465A /* Magicians.framework */; };
-		3376FA7D1FA5C5BC00701EB7 /* Magicians.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 33B49B291FA5C427000F465A /* Magicians.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		AC90036022FE1BEEECF27892 /* Pods_iOS_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D6C17639915F02DF7C16A73 /* Pods_iOS_Example.framework */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		3376FA7E1FA5C5BC00701EB7 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 33B49B231FA5C427000F465A /* Magicians.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 334B5F121EDAAE4300375186;
-			remoteInfo = "Magicians iOS";
-		};
-		33B49B281FA5C427000F465A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 33B49B231FA5C427000F465A /* Magicians.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 334B5F131EDAAE4300375186;
-			remoteInfo = "Magicians iOS";
-		};
-		33B49B2A1FA5C427000F465A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 33B49B231FA5C427000F465A /* Magicians.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 3334886E1FA59EDD0014D851;
-			remoteInfo = "Magicians macOS";
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		3376FA801FA5C5BC00701EB7 /* Embed Frameworks */ = {
@@ -46,7 +21,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				3376FA7D1FA5C5BC00701EB7 /* Magicians.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -54,13 +28,15 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		333488911FA5B9B40014D851 /* iOS Examlpe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS Examlpe.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		13456A0F1CBA3799E08FA245 /* Pods-iOS Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS Example.release.xcconfig"; path = "../../Pods/Target Support Files/Pods-iOS Example/Pods-iOS Example.release.xcconfig"; sourceTree = "<group>"; };
+		333488911FA5B9B40014D851 /* iOS Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		333488AA1FA5BA760014D851 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		333488AC1FA5BA760014D851 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		333488AE1FA5BA760014D851 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		333488B01FA5BA760014D851 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		333488B31FA5BA770014D851 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		33B49B231FA5C427000F465A /* Magicians.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Magicians.xcodeproj; path = ../Magicians.xcodeproj; sourceTree = "<group>"; };
+		6D6C17639915F02DF7C16A73 /* Pods_iOS_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOS_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC961F74BE833FB70E96B70A /* Pods-iOS Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS Example.debug.xcconfig"; path = "../../Pods/Target Support Files/Pods-iOS Example/Pods-iOS Example.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,28 +44,46 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3376FA7C1FA5C5BC00701EB7 /* Magicians.framework in Frameworks */,
+				AC90036022FE1BEEECF27892 /* Pods_iOS_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0702E70FE503BF77C68114F8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FC961F74BE833FB70E96B70A /* Pods-iOS Example.debug.xcconfig */,
+				13456A0F1CBA3799E08FA245 /* Pods-iOS Example.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		30F0124BD807C052CCAEEFCF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6D6C17639915F02DF7C16A73 /* Pods_iOS_Example.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		333488881FA5B9B40014D851 = {
 			isa = PBXGroup;
 			children = (
-				33B49B231FA5C427000F465A /* Magicians.xcodeproj */,
 				333488B11FA5BA770014D851 /* Source */,
 				333488AB1FA5BA760014D851 /* Resource */,
 				333488A91FA5BA760014D851 /* Supporting Files */,
 				333488921FA5B9B40014D851 /* Products */,
+				0702E70FE503BF77C68114F8 /* Pods */,
+				30F0124BD807C052CCAEEFCF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		333488921FA5B9B40014D851 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				333488911FA5B9B40014D851 /* iOS Examlpe.app */,
+				333488911FA5B9B40014D851 /* iOS Example.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -120,35 +114,28 @@
 			path = Source;
 			sourceTree = "<group>";
 		};
-		33B49B241FA5C427000F465A /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				33B49B291FA5C427000F465A /* Magicians.framework */,
-				33B49B2B1FA5C427000F465A /* Magicians.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		333488901FA5B9B40014D851 /* iOS Examlpe */ = {
+		333488901FA5B9B40014D851 /* iOS Example */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 333488A31FA5B9B40014D851 /* Build configuration list for PBXNativeTarget "iOS Examlpe" */;
+			buildConfigurationList = 333488A31FA5B9B40014D851 /* Build configuration list for PBXNativeTarget "iOS Example" */;
 			buildPhases = (
+				B77E3CCC095170387736B5DF /* [CP] Check Pods Manifest.lock */,
 				3334888D1FA5B9B40014D851 /* Sources */,
 				3334888E1FA5B9B40014D851 /* Frameworks */,
 				3334888F1FA5B9B40014D851 /* Resources */,
 				3376FA801FA5C5BC00701EB7 /* Embed Frameworks */,
+				8FD9BD4931D990C94369298B /* [CP] Embed Pods Frameworks */,
+				438B75C7AB855240672EB86C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				3376FA7F1FA5C5BC00701EB7 /* PBXTargetDependency */,
 			);
-			name = "iOS Examlpe";
+			name = "iOS Example";
 			productName = "iOS Examlpe";
-			productReference = 333488911FA5B9B40014D851 /* iOS Examlpe.app */;
+			productReference = 333488911FA5B9B40014D851 /* iOS Example.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -167,7 +154,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 3334888C1FA5B9B40014D851 /* Build configuration list for PBXProject "iOS Examlpe" */;
+			buildConfigurationList = 3334888C1FA5B9B40014D851 /* Build configuration list for PBXProject "iOS Example" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -178,35 +165,12 @@
 			mainGroup = 333488881FA5B9B40014D851;
 			productRefGroup = 333488921FA5B9B40014D851 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = 33B49B241FA5C427000F465A /* Products */;
-					ProjectRef = 33B49B231FA5C427000F465A /* Magicians.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
-				333488901FA5B9B40014D851 /* iOS Examlpe */,
+				333488901FA5B9B40014D851 /* iOS Example */,
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		33B49B291FA5C427000F465A /* Magicians.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = Magicians.framework;
-			remoteRef = 33B49B281FA5C427000F465A /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		33B49B2B1FA5C427000F465A /* Magicians.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = Magicians.framework;
-			remoteRef = 33B49B2A1FA5C427000F465A /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		3334888F1FA5B9B40014D851 /* Resources */ = {
@@ -221,6 +185,57 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		438B75C7AB855240672EB86C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/../../Pods/Target Support Files/Pods-iOS Example/Pods-iOS Example-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8FD9BD4931D990C94369298B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/../../Pods/Target Support Files/Pods-iOS Example/Pods-iOS Example-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B77E3CCC095170387736B5DF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-iOS Example-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		3334888D1FA5B9B40014D851 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -231,14 +246,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		3376FA7F1FA5C5BC00701EB7 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Magicians iOS";
-			targetProxy = 3376FA7E1FA5C5BC00701EB7 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		333488AD1FA5BA760014D851 /* LaunchScreen.storyboard */ = {
@@ -369,14 +376,16 @@
 		};
 		333488A41FA5B9B40014D851 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FC961F74BE833FB70E96B70A /* Pods-iOS Example.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "$(SRCROOT)/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.alchemistxxd.iOS-Examlpe";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.alchemistxxd.iOS-Example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -385,14 +394,16 @@
 		};
 		333488A51FA5B9B40014D851 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 13456A0F1CBA3799E08FA245 /* Pods-iOS Example.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "$(SRCROOT)/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.alchemistxxd.iOS-Examlpe";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.alchemistxxd.iOS-Example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -402,7 +413,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		3334888C1FA5B9B40014D851 /* Build configuration list for PBXProject "iOS Examlpe" */ = {
+		3334888C1FA5B9B40014D851 /* Build configuration list for PBXProject "iOS Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				333488A11FA5B9B40014D851 /* Debug */,
@@ -411,7 +422,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		333488A31FA5B9B40014D851 /* Build configuration list for PBXNativeTarget "iOS Examlpe" */ = {
+		333488A31FA5B9B40014D851 /* Build configuration list for PBXNativeTarget "iOS Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				333488A41FA5B9B40014D851 /* Debug */,

@@ -150,6 +150,8 @@
 		33B0EDCD1FCABBB800995C36 /* objc-runtime.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = "objc-runtime.mm"; sourceTree = "<group>"; };
 		33B1207E1FB734C500203A40 /* Magicians.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; fileEncoding = 4; path = Magicians.podspec; sourceTree = SOURCE_ROOT; };
 		33B120801FB7354A00203A40 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
+		33B9F5F31FDD0F9D00914834 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		33B9F5F51FDD1AEC00914834 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; path = Podfile; sourceTree = "<group>"; };
 		33D1D2B51FBAE9AF005E82E4 /* Layout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Layout.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -414,8 +416,10 @@
 		33990BCD1FCAB6BE0091EA8E /* Deployment */ = {
 			isa = PBXGroup;
 			children = (
+				33B9F5F51FDD1AEC00914834 /* Podfile */,
 				33B1207E1FB734C500203A40 /* Magicians.podspec */,
 				33B120801FB7354A00203A40 /* README.md */,
+				33B9F5F31FDD0F9D00914834 /* LICENSE */,
 			);
 			name = Deployment;
 			sourceTree = "<group>";

@@ -31,7 +31,7 @@ _Pragma("clang assume_nonnull begin")
                                           userInfo:nil];
         }
         let result = [NSMutableArray.alloc initWithCapacity:self.count];
-        [self enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        [self enumerateObjectsUsingBlock:^(id _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
             _Pragma("clang diagnostic push")
             _Pragma("clang diagnostic ignored \"-Wauto-var-id\"")
             if (let value = transform(obj)) {
